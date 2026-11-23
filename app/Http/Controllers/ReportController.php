@@ -8,60 +8,104 @@ use App\Models\Detail_Borrow;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Auth;
 
 class ReportController extends Controller
 {
     public function index()
     {
-        $dataTransaksi = Borrow::query()
+        $userLogin = Auth::user();
+        $isAdmin = $userLogin?->role === 'admin';
+
+        $query = Borrow::query()
             ->join('detail_borrows', 'borrows.code', '=', 'detail_borrows.code_borrow')
-            ->join('users', 'borrows.code_user', '=', 'users.code')
-            ->select('borrows.code', 'borrows.created_at', 'users.name', 'users.code as code_user', 'borrows.operator', 'borrows.return_date', 'borrows.status')
-            ->orderBy('status', 'asc')
-            ->get();
-        // return $dataTransaksi;
-        return view('layouts.report.transaction-report', ['data' => $dataTransaksi, 'dataStruk' => []]);
+            ->leftJoin('users', 'borrows.code_user', '=', 'users.code')
+            ->select(
+                'borrows.code',
+                'borrows.created_at',
+                'users.name as name_peminjam', // ← ubah nama agar jelas
+                'users.code as code_user',
+                'borrows.return_date',
+                'borrows.status'
+            );
+
+        if (!$isAdmin) {
+            $query->where(function($q) use ($userLogin) {
+                $q->where('borrows.code_user', $userLogin->code)
+                  ->orWhere('borrows.user_id', $userLogin->id);
+            });
+        }
+
+        $dataTransaksi = $query->orderBy('borrows.created_at', 'desc')->distinct()->get();
+
+        return view('layouts.report.transaction-report', ['data' => $dataTransaksi]);
     }
+
     public function checkForfeit(Request $request, $code)
     {
-        $cekDenda = Borrow::where('code', $code)->select('return_date')->get();
-        // selisih
-        $tglPengembalian = $cekDenda[0]->return_date;
+        $cekDenda = Borrow::where('code', $code)->select('return_date')->first();
+        if (!$cekDenda) {
+            return redirect()->back()->with('message', 'Data tidak ditemukan!');
+        }
+
+        $tglPengembalian = $cekDenda->return_date;
         $hariIni = Carbon::today();
-        $selisih = $hariIni->diff($tglPengembalian);
 
         if ($hariIni > $tglPengembalian) {
-            $selisihAngka = $selisih->d;
+            $selisihAngka = $hariIni->diffInDays($tglPengembalian);
             $denda = 500 * $selisihAngka;
             $request->session()->put('forfeit', $denda);
-            return redirect()->back()->with('late', 'you are late');
-        } else {
-            return redirect()->back()->with('discipline', 'you discipline');
+            return redirect()->back()->with('late', 'Terlambat mengembalikan buku');
         }
+
+        return redirect()->back()->with('discipline', 'Tepat waktu');
     }
+
     public function doneForfeit($code)
     {
-        $selesaikan = Borrow::where('code', $code)
-            ->update([
-                'status' => 1
-            ]);
-        $kodeBuku = Detail_Borrow::where('code_borrow', $code)
-            ->select('code_book')
-            ->get();
-        $kodeBuku[0]->code_book;
-        $sedangDipinjam = Book::where('code', $kodeBuku[0]->code_book)->select('being_borrowed')->get();
-        $sd = $sedangDipinjam[0]->being_borrowed - 1;
-        $kurangiDipinjam = Book::where('code', $kodeBuku[0]->code_book)->select('being_borrowed')->update(['being_borrowed' => $sd]);
-        return redirect()->back()->with('done', 'borrow solved');
+        $pinjam = Borrow::where('code', $code)->first();
+        if (!$pinjam) {
+            return redirect()->back()->with('message', 'Data tidak ditemukan!');
+        }
+
+        $pinjam->update(['status' => 1]);
+
+        $kodeBuku = Detail_Borrow::where('code_borrow', $code)->pluck('code_book');
+        foreach ($kodeBuku as $kode) {
+            $buku = Book::where('code', $kode)->first();
+            if ($buku) {
+                $buku->decrement('being_borrowed');
+            }
+        }
+
+        return redirect()->back()->with('done', 'Peminjaman selesai');
     }
+
     public function dataUser($code_user)
     {
-        $dataUser = User::where('code', $code_user)->first();
+        $userLogin = Auth::user();
+        $isAdmin = $userLogin?->role === 'admin';
+
+        $dataUser = User::where('id', $code_user)
+            ->orWhere('code', $code_user)
+            ->firstOrFail();
+
+        if (!$isAdmin && $userLogin->id !== $dataUser->id) {
+            abort(403, 'Anda tidak memiliki akses ke halaman ini');
+        }
+
         $totalPinjam = Borrow::query()
             ->join('detail_borrows', 'borrows.code', '=', 'detail_borrows.code_borrow')
-            ->selectRaw('count(borrows.code_user) as total')
-            ->where('code_user', $code_user)
-            ->get();
-        return view('layouts.report.data-user', ['user' => $dataUser, 'totalPinjam' => $totalPinjam]);
+            ->where(function ($q) use ($dataUser) {
+                $q->where('borrows.code_user', $dataUser->code)
+                  ->orWhere('borrows.user_id', $dataUser->id);
+            })
+            ->selectRaw('count(borrows.code) as total')
+            ->first();
+
+        return view('layouts.report.data-user', [
+            'user' => $dataUser,
+            'totalPinjam' => $totalPinjam->total ?? 0
+        ]);
     }
 }

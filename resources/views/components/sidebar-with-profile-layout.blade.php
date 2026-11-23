@@ -5,7 +5,7 @@
                 <div class="logo mt-3">
                     <h3>Digilib</h3>
                 </div>
-                <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
+                <div class="theme-toggle d-flex gap-2 align-items-center mt-2">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         aria-hidden="true" role="img" class="iconify iconify--system-uicons" width="20"
                         height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21">
@@ -23,7 +23,7 @@
                         </g>
                     </svg>
                     <div class="form-check form-switch fs-6">
-                        <input class="form-check-input  me-0" type="checkbox" id="toggle-dark">
+                        <input class="form-check-input me-0" type="checkbox" id="toggle-dark">
                         <label class="form-check-label"></label>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -34,7 +34,7 @@
                         </path>
                     </svg>
                 </div>
-                <div class="sidebar-toggler  x">
+                <div class="sidebar-toggler x">
                     <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
                 </div>
             </div>
@@ -42,27 +42,32 @@
         <x-sidebar></x-sidebar>
     </div>
 </div>
+
 <div style="width: 100%; height: 40vh; z-index: -1; position: absolute;" class="bg-primary"></div>
 
-<nav style="height: 0px; " class="navbar pt-5 pb-0 navbar-expand navbar-light navbar-top">
+<nav style="height: 0px;" class="navbar pt-5 pb-0 navbar-expand navbar-light navbar-top">
     <header class="my-0 smx-2 position-absolute">
         <a href="#" class="burger-btn text-white d-block d-xl-none">
             <i class="bi bi-justify fs-3"></i>
         </a>
     </header>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto mb-lg-0">
-        </ul>
+        <ul class="navbar-nav m-auto mb-lg-0"></ul>
         <div class="dropdown">
             <a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="">
                 <div class="user-menu d-flex">
                     <div class="user-name text-end me-3">
                         <h6 class="mb-0 text-white">{{ Auth::user()->name }}</h6>
-                        <p class="mb-0 text-sm text-white">{{ Auth::user()->name }}</p>
+                        <p class="mb-0 text-sm text-white">{{ Auth::user()->email }}</p>
                     </div>
                     <div class="user-img d-flex align-items-center">
                         <div class="avatar avatar-md">
-                            <img src="assets/images/faces/1.jpg">
+                            {{-- ✅ FOTO PROFIL SESUAI YANG DIUPLOAD --}}
+                            @if (Auth::user()->photo_profile_path == null)
+                                <img src="{{ asset('assets/images/faces/1.jpg') }}" alt="Foto Profil">
+                            @else
+                                <img src="{{ asset('storage/profile/' . Auth::user()->photo_profile_path) }}" alt="Foto Profil">
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -73,10 +78,10 @@
                     <h6 class="dropdown-header">Halo, {{ Auth::user()->name }}!</h6>
                 </li>
                 <li>
-                    <a class="dropdown-item" href="profile"><i class="icon-mid bi bi-person me-2"></i> My
-                        Profile</a>
+                    <a class="dropdown-item" href="{{ route('profile') }}">
+                        <i class="icon-mid bi bi-person me-2"></i> My Profile
+                    </a>
                 </li>
-
                 <li>
                     <hr class="dropdown-divider">
                 </li>
@@ -84,17 +89,12 @@
                     <form action="{{ route('logout') }}" method="POST">
                         @csrf
                         <a class="dropdown-item" href="{{ route('logout') }}"
-                            onclick="event.preventDefault();
-                        this.closest('form').submit();"
-                            class='sidebar-link'>
-                            <i class="icon-mid bi bi-box-arrow-left me-2"></i>
-                            Logout
+                            onclick="event.preventDefault(); this.closest('form').submit();">
+                            <i class="icon-mid bi bi-box-arrow-left me-2"></i> Logout
                         </a>
                     </form>
-
                 </li>
             </ul>
         </div>
     </div>
-
 </nav>

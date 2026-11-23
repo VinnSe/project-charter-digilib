@@ -13,127 +13,166 @@ use Illuminate\Support\Facades\Auth;
 class BorrowController extends Controller
 {
     /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
+     * Buat transaksi peminjaman baru
+     * HANYA pengguna biasa yang boleh akses
      */
     public function index(Request $request)
     {
-        $opr = Auth::user()->name;
+        $userLogin = Auth::user();
+        
+        // 🔒 Admin tidak boleh akses
+        if ($userLogin?->role === 'admin') {
+            abort(403, 'Halaman ini hanya untuk peminjam.');
+        }
+        
+        if ($request->session()->has('code_borrow')) {
+            return redirect('cart');
+        }
+        
+        $opr = $userLogin->name;
         $tgl = date('dmY');
         $tgl_pinjam = Carbon::today();
-        // $tgl_kembali = Carbon::today()->addDays(7);
-        // ->translatedFormat('d F Y')
-        $data = Borrow::query()->where('operator', $opr)->count();
-        $ke = $data + 1;
-        $code_borrow = $tgl . "-" . $opr . "-" . $ke;
-        Borrow::query()->create([
-            'code' => $code_borrow,
-            'operator' => $opr,
-            'status' => 0,
+        $jumlah = Borrow::where('operator', $opr)->count();
+        $urutan = $jumlah + 1;
+        $code_borrow = $tgl . "-" . $opr . "-" . $urutan;
+        
+        Borrow::create([
+            'code'         => $code_borrow,
+            'operator'     => $opr,
+            'status'       => 0,
             'borrow_date' => $tgl_pinjam,
+            'user_id'     => $userLogin->id,
+            'code_user'   => $userLogin->code,
         ]);
+        
         $request->session()->put('code_borrow', $code_borrow);
         return redirect('cart');
     }
 
+    /**
+     * Halaman Keranjang Peminjaman
+     * HANYA pengguna biasa
+     */
     public function cart(Request $request)
     {
+        // 🔒 Admin tidak boleh akses
+        if (Auth::user()?->role === 'admin') {
+            abort(403, 'Halaman ini hanya untuk peminjam.');
+        }
+        
         $struk = $request->session()->get('code_borrow');
-        $user = User::whereNotNull('code')->get();
+        if (!$struk) {
+            return redirect('borrow')->with('message', 'Silakan mulai transaksi baru terlebih dahulu.');
+        }
+        
         $dataBuku = Book::all();
-        $kodePeminjam = Borrow::where('code', $struk)
-            ->select('code_user')
-            ->get();
         $peminjam = Borrow::query()
             ->join('users', 'borrows.code_user', '=', 'users.code')
             ->select('users.name')
             ->where('borrows.code', $struk)
-            ->get();
+            ->first();
+            
         $isi = Detail_Borrow::query()
             ->join('books', 'detail_borrows.code_book', '=', 'books.code')
-            ->join('borrows', 'detail_borrows.code_borrow', '=', 'borrows.code')
-            ->select('detail_borrows.code_book as code', 'books.title', 'borrows.code_user', 'detail_borrows.id')
+            ->select('detail_borrows.code_book as code', 'books.title', 'detail_borrows.id')
             ->where('detail_borrows.code_borrow', $struk)
             ->get();
-        // return $isi;
-        return view('layouts.borrow.my-borrow', ['isi' => $isi, 'user' => $user, 'dataBuku' => $dataBuku, 'peminjam' => $peminjam, 'kodePeminjam' => $kodePeminjam]);
+            
+        return view('layouts.borrow.my-borrow', compact(
+            'isi',
+            'dataBuku',
+            'peminjam'
+        ));
     }
 
-    public function checkMember(Request $request)
-    {
-        $struk = $request->session()->get('code_borrow');
-        $cekAnggota = User::where('code', $request->code)->count();
-        if ($cekAnggota > 0) {
-            $inputKode = Borrow::where('code', $struk)
-                ->update([
-                    'code_user' => $request->code
-                ]);
-            return redirect()->back();
-        } else {
-            return redirect()->back()->with('message', 'User Not Found');
-        }
-    }
-
+    /**
+     * Tambah Buku ke Keranjang
+     */
     public function addCart(Request $request)
     {
-        $struk = $request->session()->get('code_borrow');
-        $cekMember = Borrow::query()
-            ->join('detail_borrows', 'borrows.code', '=', 'detail_borrows.code_borrow')
-            ->where('detail_borrows.code_book', $request->code)
-            ->where('borrows.code_user', $request->code_user)
-            ->where('borrows.status', 0)
-            ->count();
-        $cekBuku = Book::where('code', $request->code)->count();
-        if ($cekBuku > 0 && $request->code_user == null) {
-            return redirect()->back()->with('user', 'User Empty');
-        } else if ($cekBuku == 0) {
-            return redirect()->back()->with('message', 'Not Found');
-        } else if ($cekMember > 0 || $request->code_user == 0) {
-            return redirect()->back()->with('use', 'book is in use');
-        } else {
-            $tambahBuku = Detail_Borrow::create([
-                'code_borrow' => $struk,
-                'code_book' => $request->code,
-            ]);
-            $sedangDipinjam = Book::where('code', $request->code)->select('being_borrowed')->get();
-            $sd = $sedangDipinjam[0]->being_borrowed + 1;
-            $kurangiDipinjam = Book::where('code', $request->code)->select('being_borrowed')->update(['being_borrowed' => $sd]);
-            $isiTanggal = Borrow::where('code', $struk)
-                ->update([
-                    'return_date' => Carbon::today()->addDays(7)
-                ]);
-            return redirect()->back();
+        // 🔒 Admin tidak boleh akses
+        if (Auth::user()?->role === 'admin') {
+            abort(403, 'Halaman ini hanya untuk peminjam.');
         }
-    }
-
-    public function deleteCart($id)
-    {
-        $deleteBukuPinjam = Detail_Borrow::findOrFail($id);
-        $code_book = Detail_Borrow::findOrFail($id)
-            ->select('code_book')
-            ->get();
-        $sedangDipinjam = Book::where('code', $code_book[0]->code_book)->select('being_borrowed')->get();
-        $sd = $sedangDipinjam[0]->being_borrowed - 1;
-        $kurangiDipinjam = Book::where('code', $code_book[0]->code_book)->select('being_borrowed')->update(['being_borrowed' => $sd]);
-        $deleteBukuPinjam->delete();
+        
+        $struk = $request->session()->get('code_borrow');
+        if (!$struk) {
+            return redirect('borrow')->with('message', 'Mulai transaksi baru terlebih dahulu.');
+        }
+        
+        $buku = Book::where('code', $request->code)->first();
+        if (!$buku) {
+            return redirect()->back()->with('message', 'Kode buku tidak ditemukan!');
+        }
+        
+        $sudahAda = Detail_Borrow::where('code_borrow', $struk)
+            ->where('code_book', $request->code)
+            ->count();
+        if ($sudahAda > 0) {
+            return redirect()->back()->with('use', 'Buku sudah ada di keranjang!');
+        }
+        
+        $tersedia = $buku->stock - $buku->being_borrowed;
+        if ($tersedia <= 0) {
+            return redirect()->back()->with('use', 'Stok buku sudah habis dipinjam!');
+        }
+        
+        Detail_Borrow::create([
+            'code_borrow' => $struk,
+            'code_book'   => $request->code,
+        ]);
+        
+        $buku->increment('being_borrowed');
+        Borrow::where('code', $struk)->update([
+            'return_date' => Carbon::today()->addDays(7)
+        ]);
+        
         return redirect()->back();
     }
 
-    public function addBorrow(Request $request)
+    /**
+     * Hapus Buku dari Keranjang
+     */
+    public function deleteCart($id)
     {
-        $struk = $request->session()->get('code_borrow');
-        $tgl_kembali = Carbon::today()->addDays($request->return_date);
-        $updatePinjam = Borrow::where('code', $struk)
-            ->update([
-                'return_date' => $tgl_kembali
-            ]);
-        return redirect('report');
+        // 🔒 Admin tidak boleh akses
+        if (Auth::user()?->role === 'admin') {
+            abort(403, 'Halaman ini hanya untuk peminjam.');
+        }
+        
+        $detail = Detail_Borrow::findOrFail($id);
+        $buku = Book::where('code', $detail->code_book)->first();
+        if ($buku) {
+            $buku->decrement('being_borrowed');
+        }
+        $detail->delete();
+        return redirect()->back();
     }
 
-    // public function print(Request $request)
-    // {
-    //     $struk = $request->session()->get('code_borrow');
-    //     return view('layouts.print');
-    // }
+    /**
+     * Simpan & Selesaikan Peminjaman
+     */
+    public function addBorrow(Request $request)
+    {
+        // 🔒 Admin tidak boleh akses
+        if (Auth::user()?->role === 'admin') {
+            abort(403, 'Halaman ini hanya untuk peminjam.');
+        }
+        
+        $struk = $request->session()->get('code_borrow');
+        if (!$struk) {
+            return redirect('borrow')->with('message', 'Transaksi tidak ditemukan, silakan mulai ulang.');
+        }
+        
+        $hari = $request->return_date ?? 7;
+        $hari = max(1, min(30, (int)$hari));
+        
+        Borrow::where('code', $struk)->update([
+            'return_date' => Carbon::today()->addDays($hari),
+            'status'      => 1,
+        ]);
+        
+        $request->session()->forget('code_borrow');
+        return redirect()->route('report')->with('berhasil', 'Peminjaman berhasil dicatat!');
+    }
 }

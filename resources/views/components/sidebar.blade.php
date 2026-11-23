@@ -1,7 +1,6 @@
 <div class="sidebar-menu">
     <ul class="menu">
         <li class="sidebar-title">Daftar</li>
-
         <li class="sidebar-item {{ Request::is('dashboard') ? 'active' : '' }}">
             <a href="{{ route('dashboard') }}" class='sidebar-link'>
                 <i class="bi bi-grid-fill"></i>
@@ -9,13 +8,14 @@
             </a>
         </li>
 
-
+        {{-- 🔒 MENU KHUSUS ADMIN --}}
+        @if(auth()->check() && auth()->user()->role === 'admin')
         <li class="sidebar-item has-sub {{ Request::is('book') ? 'active' : '' }}{{ Request::is('category') ? 'active' : '' }}{{ Request::is('add-book') ? 'active' : '' }}{{ Request::is('add-category') ? 'active' : '' }}">
             <a href="" class='sidebar-link'>
                 <i class="bi bi-stack"></i>
                 <span>Manajemen</span>
             </a>
-            <ul class="submenu ">
+            <ul class="submenu">
                 <li class="submenu-item">
                     <a href="{{ route('book') }}">Stok Buku</a>
                 </li>
@@ -24,28 +24,36 @@
                 </li>
             </ul>
         </li>
+        @endif
 
-        <li class="sidebar-item {{ Request::is('cart') ? 'active' : '' }}">
+        {{-- ✅ MENU PINJAM — HANYA UNTUK PENGGUNA BIASA --}}
+        @if(auth()->check() && auth()->user()->role !== 'admin')
+        <li class="sidebar-item {{ Request::is('borrow') ? 'active' : '' }}{{ Request::is('cart') ? 'active' : '' }}">
             <a href="{{ route('borrow') }}" class='sidebar-link'>
                 <i class="bi bi-cart-fill"></i>
                 <span>Pinjam</span>
             </a>
         </li>
+        @endif
+
         <li class="sidebar-item {{ Request::is('report') ? 'active' : '' }}">
             <a href="{{ route('report') }}" class='sidebar-link'>
                 <i class="bi bi-clipboard-check-fill"></i>
                 <span>Laporan</span>
             </a>
         </li>
+
+        {{-- 🔒 MENU USER KHUSUS ADMIN --}}
+        @if(auth()->check() && auth()->user()->role === 'admin')
         <li class="sidebar-item {{ Request::is('user') ? 'active' : '' }}{{ Request::is('add-user') ? 'active' : '' }}">
             <a href="{{ route('user') }}" class='sidebar-link'>
                 <i class="bi bi-people-fill"></i>
                 <span>User</span>
             </a>
         </li>
+        @endif
 
         <li class="sidebar-title">Tentang Akun</li>
-
         <li class="sidebar-item {{ Request::is('profile') ? 'active' : '' }}">
             <a href="{{ route('profile') }}" class='sidebar-link'>
                 <i class="bi bi-person-fill"></i>
@@ -56,14 +64,12 @@
             <form action="{{ route('logout') }}" method="POST">
                 @csrf
                 <a href="{{ route('logout') }}"
-                    onclick="event.preventDefault();
-            this.closest('form').submit();"
-                    class='sidebar-link'>
+                   onclick="event.preventDefault(); this.closest('form').submit();"
+                   class='sidebar-link'>
                     <i class="bi bi-box-arrow-left"></i>
                     <span>Logout</span>
                 </a>
             </form>
         </li>
-
     </ul>
 </div>

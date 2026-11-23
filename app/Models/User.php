@@ -37,4 +37,17 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Isi kolom code secara otomatis saat membuat akun baru
+     */
+    protected static function booted()
+    {
+        static::creating(function ($user) {
+            if (empty($user->code)) {
+                $nomor = self::max('id') + 1;
+                $user->code = 'USR' . str_pad($nomor, 3, '0', STR_PAD_LEFT);
+            }
+        });
+    }
 }

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\book;
+use App\Models\Book;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
@@ -38,23 +38,32 @@ class BookController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'title'   => 'required|string|max:255',
+            'code'    => 'required|string|max:50|unique:books,code',
+            'writer'  => 'required|string|max:255',
+            'stock'   => 'required|integer|min:1',
+            'category_id' => 'required|exists:categories,id',
+        ]);
+
         Book::create([
             'category_id' => $request->category_id,
-            'code' => $request->code,
-            'title' => $request->title,
-            'cover' => '',
-            'writer' => $request->writer,
-            'stock' => $request->stock,
+            'code'        => $request->code,
+            'title'       => $request->title,
+            'cover'       => '',
+            'writer'      => $request->writer,
+            'stock'       => $request->stock,
             'being_borrowed' => 0,
-            'price' => $request->price
+            // ✅ price dihapus sepenuhnya
         ]);
-        return redirect('book');
+
+        return redirect('book')->with('berhasil', 'Buku berhasil ditambahkan!');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\book  $book
+     * @param  \App\Models\Book  $book
      * @return \Illuminate\Http\Response
      */
     public function show()
@@ -65,7 +74,7 @@ class BookController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\book  $book
+     * @param  \App\Models\Book  $book
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -78,32 +87,42 @@ class BookController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\book  $book
+     * @param  \App\Models\Book  $book
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
+        $request->validate([
+            'title'   => 'required|string|max:255',
+            'code'    => 'required|string|max:50|unique:books,code,' . $id,
+            'writer'  => 'required|string|max:255',
+            'stock'   => 'required|integer|min:1',
+            'category_id' => 'required|exists:categories,id',
+        ]);
+
         $updateBuku = Book::findOrFail($id);
         $updateBuku->update([
-            'code' => $request->code,
-            'title' => $request->title,
-            'writer' => $request->writer,
-            'stock' => $request->stock,
-            'price' => $request->price
+            'code'        => $request->code,
+            'title'       => $request->title,
+            'writer'      => $request->writer,
+            'stock'       => $request->stock,
+            'category_id' => $request->category_id,
+            // ✅ price dihapus
         ]);
-        return redirect('book');
+
+        return redirect('book')->with('berhasil', 'Buku berhasil diperbarui!');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\book  $book
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        $deleteKategori = Book::findOrFail($id);
-        $deleteKategori->delete();
-        return redirect()->back()->with('message', 'Delete successfully');
+        $deleteBuku = Book::findOrFail($id);
+        $deleteBuku->delete();
+        return redirect()->back()->with('message', 'Buku berhasil dihapus!');
     }
 }
