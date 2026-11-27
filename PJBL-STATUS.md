@@ -72,6 +72,17 @@ Belum bisa dikerjakan agent; wajib dilengkapi sebelum submission.
 
 Kalau semua ditunda sampai setelah P15, P11/P12/P14 harus direvisi agar statusnya konsisten. Hindari itu.
 
+## Item lain di luar lima di atas
+
+| Item | Penanggung | Waktu |
+|---|---|---|
+| Tanda tangan persetujuan di `implementation-readiness-report.md` (pemilik aplikasi, ketua tim QA, dosen) | orang sungguhan | sebelum P14 |
+| Persetujuan keputusan usulan No-Go/Conditional Go dan strategi pilot + mini paralel | pemilik aplikasi/dosen | sebelum P14 |
+| Menyampaikan presentasi 15 menit, demo 4 menit, dan tanya jawab 5 menit | anggota kelompok | saat P15 |
+| Izin push commit ke GitHub | user | sebelum submission |
+
+Objek DIGILIB sudah disetujui dosen; pembagian peran dan format `Co-authored-by` sudah diputuskan, jadi tidak perlu diulang.
+
 Yang masih bisa dikerjakan agent: uji rollback, konversi laporan ke PDF, dan push commit (dengan izin).
 
 ## Berikutnya
