@@ -58,6 +58,18 @@ Pareto: 3 dari 5 kegagalan (60%) pada area akses/role. 5 Whys menemukan akar
 proses: kriteria hak akses tidak masuk Definition of Done. 6 rekomendasi
 berpemilik dan bertarget 30 Nov 2026.
 
+## Yang masih harus diselesaikan kelompok sendiri
+
+Belum bisa dikerjakan agent; wajib dilengkapi sebelum submission:
+
+1. UAT ditandatangani pemilik aplikasi (form UAT belum dibuat, akan disiapkan kosong)
+2. Daftar hadir pelatihan admin/anggota
+3. Peer assessment tiap anggota
+4. Refleksi individu
+5. Tanda tangan form peer review (`02-test-case/peer-review-form.md` — isi sudah ada, tinggal konfirmasi)
+
+Yang masih bisa dikerjakan agent: uji rollback, konversi laporan ke PDF, dan push commit (dengan izin).
+
 ## Berikutnya
 
 P13 — Regression: jalankan suite yang sama di `v1-baseline` dan `v2-fixes`
