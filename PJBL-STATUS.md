@@ -60,13 +60,17 @@ berpemilik dan bertarget 30 Nov 2026.
 
 ## Yang masih harus diselesaikan kelompok sendiri
 
-Belum bisa dikerjakan agent; wajib dilengkapi sebelum submission:
+Belum bisa dikerjakan agent; wajib dilengkapi sebelum submission.
 
-1. UAT ditandatangani pemilik aplikasi (form UAT belum dibuat, akan disiapkan kosong)
-2. Daftar hadir pelatihan admin/anggota
-3. Peer assessment tiap anggota
-4. Refleksi individu
-5. Tanda tangan form peer review (`02-test-case/peer-review-form.md` — isi sudah ada, tinggal konfirmasi)
+| Item | Waktu terbaik | Alasan |
+|---|---|---|
+| UAT ditandatangani pemilik aplikasi (form belum dibuat, akan disiapkan kosong) | Sebelum P14 | P11 menyatakan UAT belum; keputusan final butuh status terbaru |
+| Daftar hadir pelatihan admin/anggota | Sebelum P14 | syarat Conditional Go, harus masuk sebelum keputusan dikunci |
+| Tanda tangan form peer review (`02-test-case/peer-review-form.md`) | Segera, paling lambat sebelum P14 | form sudah jadi sejak P9 |
+| Peer assessment tiap anggota | Saat P15 | memang luaran P15 |
+| Refleksi individu | Saat P15 | memang luaran P15 |
+
+Kalau semua ditunda sampai setelah P15, P11/P12/P14 harus direvisi agar statusnya konsisten. Hindari itu.
 
 Yang masih bisa dikerjakan agent: uji rollback, konversi laporan ke PDF, dan push commit (dengan izin).
 
