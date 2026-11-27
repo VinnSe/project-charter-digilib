@@ -1,0 +1,14 @@
+{
+    "id": "SYS-05",
+    "build": "v1-baseline",
+    "commit": "6e30775",
+    "data": [
+        "student@gmail.com",
+        "BK-001"
+    ],
+    "expected": "minimal 4 dari 5 elemen antarmuka cart tersedia",
+    "actual": "{\"ditemukan\":[\"<form\",\"name=\\\"code\\\"\",\"name=\\\"return_date\\\"\",\"<table\",\"add-borrow\"],\"jumlah\":5}",
+    "status": "lulus",
+    "penguji": "Fathan",
+    "waktu": "2026-11-27T16:19:36+07:00"
+}

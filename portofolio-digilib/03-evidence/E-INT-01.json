@@ -1,0 +1,13 @@
+{
+    "id": "INT-01",
+    "build": "v1-baseline",
+    "commit": "6e30775",
+    "data": [
+        "student@gmail.com"
+    ],
+    "expected": "redirect /cart, borrows bertambah dengan status 0, session code_borrow terisi",
+    "actual": "{\"http\":302,\"lokasi\":\"http:\\/\\/localhost\\/cart\",\"kode_borrow\":\"27112026-Anggota Uji-1\",\"status\":\"0\"}",
+    "status": "lulus",
+    "penguji": "Dafit",
+    "waktu": "2026-11-27T16:19:35+07:00"
+}

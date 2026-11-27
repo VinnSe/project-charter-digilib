@@ -1,0 +1,15 @@
+{
+    "id": "INT-05",
+    "build": "v1-baseline",
+    "commit": "6e30775",
+    "data": [
+        "student@gmail.com",
+        "BK-001",
+        "return_date=14"
+    ],
+    "expected": "status=1 dan session code_borrow dihapus",
+    "actual": "{\"status\":\"0\",\"session_code_borrow_masih_ada\":true}",
+    "status": "gagal",
+    "penguji": "Dafit",
+    "waktu": "2026-11-27T16:19:35+07:00"
+}

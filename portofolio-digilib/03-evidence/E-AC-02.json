@@ -1,0 +1,14 @@
+{
+    "id": "AC-02",
+    "build": "v1-baseline",
+    "commit": "6e30775",
+    "data": [
+        "student@gmail.com",
+        "BK-001"
+    ],
+    "expected": "Diberikan buku tersedia, ketika ditambah ke keranjang, maka muncul di /cart dan Dipinjam +1",
+    "actual": "muncul=ya, being_borrowed=1",
+    "status": "lulus",
+    "penguji": "Fathan",
+    "waktu": "2026-11-27T16:19:35+07:00"
+}

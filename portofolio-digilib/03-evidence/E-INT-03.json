@@ -1,0 +1,15 @@
+{
+    "id": "INT-03",
+    "build": "v1-baseline",
+    "commit": "6e30775",
+    "data": [
+        "student@gmail.com",
+        "BK-001",
+        "submit 2x"
+    ],
+    "expected": "jumlah detail tetap 1",
+    "actual": "{\"jumlah_detail_setelah_dua_kali_submit\":1}",
+    "status": "lulus",
+    "penguji": "Dafit",
+    "waktu": "2026-11-27T16:19:35+07:00"
+}

@@ -1,0 +1,13 @@
+{
+    "id": "SYS-03",
+    "build": "v1-baseline",
+    "commit": "6e30775",
+    "data": [
+        "student@gmail.com"
+    ],
+    "expected": "akses /add-book ditolak dengan 403",
+    "actual": "{\"http\":200}",
+    "status": "gagal",
+    "penguji": "Fathan",
+    "waktu": "2026-11-27T16:19:35+07:00"
+}

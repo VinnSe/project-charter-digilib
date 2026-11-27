@@ -1,0 +1,103 @@
+PHPUnit 9.6.3 by Sebastian Bergmann and contributors.
+
+P9Acceptance (Tests\Feature\Pjbl\P9Acceptance)
+ ✔ Ac 1 anggota memulai peminjaman
+ ✔ Ac 2 buku muncul di keranjang
+ ✘ Ac 3 anggota ditolak di halaman admin
+   │
+   │ AC-03 tidak terpenuhi.
+   │ Failed asserting that false is true.
+   │
+   │ D:\digilib-pjbl-v1\tests\Feature\Pjbl\P9AcceptanceTest.php:53
+   │
+
+P9Integration (Tests\Feature\Pjbl\P9Integration)
+ ✔ Int 01 login borrow membuat transaksi
+ ✔ Int 02 add cart menambah detail dan stok dipinjam
+ ✔ Int 03 duplikat buku ditolak
+ ✘ Int 04 stok habis ditolak
+   │
+   │ INT-04 gagal: buku dengan stok habis tetap bisa ditambahkan.
+   │ Failed asserting that false is true.
+   │
+   │ D:\digilib-pjbl-v1\tests\Feature\Pjbl\P9IntegrationTest.php:93
+   │
+
+ ✘ Int 05 selesai pinjam mengubah status
+   │
+   │ INT-05 gagal: peminjaman tidak diselesaikan dengan benar.
+   │ Failed asserting that false is true.
+   │
+   │ D:\digilib-pjbl-v1\tests\Feature\Pjbl\P9IntegrationTest.php:111
+   │
+
+P9System (Tests\Feature\Pjbl\P9System)
+ ✔ Sys 01 alur lengkap sampai laporan
+ ✘ Sys 02 admin tidak boleh membuka borrow
+   │
+   │ SYS-02 gagal: admin masih bisa membuka halaman peminjaman.
+   │ Failed asserting that false is true.
+   │
+   │ D:\digilib-pjbl-v1\tests\Feature\Pjbl\P9SystemTest.php:38
+   │
+
+ ✘ Sys 03 anggota tidak boleh membuka add book
+   │
+   │ SYS-03 gagal: anggota masih bisa membuka halaman admin.
+   │ Failed asserting that false is true.
+   │
+   │ D:\digilib-pjbl-v1\tests\Feature\Pjbl\P9SystemTest.php:51
+   │
+
+ ✔ Sys 04 waktu respons katalog
+ ✔ Sys 05 kelengkapan elemen halaman cart
+
+Time: 00:01.711, Memory: 34.00 MB
+
+Summary of non-successful tests:
+
+P9Acceptance (Tests\Feature\Pjbl\P9Acceptance)
+ ✘ Ac 3 anggota ditolak di halaman admin
+   │
+   │ AC-03 tidak terpenuhi.
+   │ Failed asserting that false is true.
+   │
+   │ D:\digilib-pjbl-v1\tests\Feature\Pjbl\P9AcceptanceTest.php:53
+   │
+
+P9Integration (Tests\Feature\Pjbl\P9Integration)
+ ✘ Int 04 stok habis ditolak
+   │
+   │ INT-04 gagal: buku dengan stok habis tetap bisa ditambahkan.
+   │ Failed asserting that false is true.
+   │
+   │ D:\digilib-pjbl-v1\tests\Feature\Pjbl\P9IntegrationTest.php:93
+   │
+
+ ✘ Int 05 selesai pinjam mengubah status
+   │
+   │ INT-05 gagal: peminjaman tidak diselesaikan dengan benar.
+   │ Failed asserting that false is true.
+   │
+   │ D:\digilib-pjbl-v1\tests\Feature\Pjbl\P9IntegrationTest.php:111
+   │
+
+P9System (Tests\Feature\Pjbl\P9System)
+ ✘ Sys 02 admin tidak boleh membuka borrow
+   │
+   │ SYS-02 gagal: admin masih bisa membuka halaman peminjaman.
+   │ Failed asserting that false is true.
+   │
+   │ D:\digilib-pjbl-v1\tests\Feature\Pjbl\P9SystemTest.php:38
+   │
+
+ ✘ Sys 03 anggota tidak boleh membuka add book
+   │
+   │ SYS-03 gagal: anggota masih bisa membuka halaman admin.
+   │ Failed asserting that false is true.
+   │
+   │ D:\digilib-pjbl-v1\tests\Feature\Pjbl\P9SystemTest.php:51
+   │
+
+FAILURES!
+Tests: 13, Assertions: 27, Failures: 5.
