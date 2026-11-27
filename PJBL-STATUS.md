@@ -38,10 +38,18 @@ ISO/IEC 25010 edisi 2011: 5 product quality + 1 quality in use.
 6 indikator: 2 memenuhi, 3 tidak, 1 belum terukur (UAT draft).
 Checklist 8 butir: 3 Ya, 4 Tidak, 1 belum terukur.
 
+## P11 — selesai
+
+Commit menyusul. File `05-laporan/implementation-readiness-report.md` dan
+`go-live-checklist.md`. Tabel kriteria memakai angka nyata P9: pass rate 61,5%,
+3 Major terbuka, 3 pelanggaran akses role. Keputusan usulan: No-Go rilis penuh
+→ Conditional Go setelah 5 syarat. Strategi: pilot + mini paralel.
+Go-live checklist: 3 dari 10 item selesai. Tanda tangan UAT/PIC sengaja kosong.
+
 ## Berikutnya
 
-P11 — Implementation Readiness: kriteria Go/No-Go, keputusan awal, strategi
-peralihan, konversi data, pelatihan, rollback, go-live checklist, readiness report.
+P12 — Metrik kualitas: dashboard minimal 8 KPI dengan status Hijau/Kuning/Merah,
+analisis Pareto dan 5 Whys, serta rekomendasi berpemilik dan bertarget.
 
 ## Perintah berguna
 
