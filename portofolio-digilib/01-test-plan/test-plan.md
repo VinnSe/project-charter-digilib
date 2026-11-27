@@ -58,3 +58,20 @@ expected, actual, status, penguji, dan waktu.
 - Setiap test memiliki file bukti `.json`
 - Log PHPUnit disimpan apa adanya
 - Kegagalan dicatat sebagai defect, tidak dihapus
+
+## Pemetaan kualitas (P10)
+
+Karakteristik yang dipilih, indikator, target SMART, dan hasil pengukuran
+terdapat di `06-metrik/quality-checklist.md`. Ringkasannya:
+
+| Karakteristik | Indikator | Hasil di v1 |
+|---|---|---|
+| Functional suitability | 5 dari 5 INT lulus | 3 dari 5 |
+| Security | 0 akses lintas role | 3 pelanggaran |
+| Performance efficiency | rata-rata `/book` maks. 2 detik | 0,0062 detik |
+| Usability | minimal 4 dari 5 elemen cart | 5 dari 5 |
+| Reliability | transaksi selesai konsisten | INT-05 gagal |
+| Effectiveness (quality in use) | 4 dari 5 penguji tanpa bantuan | belum terukur |
+
+Standar acuan: ISO/IEC 25010 edisi 2011. Hasil ini menjadi dasar kriteria
+Go/No-Go di P11 dan dashboard KPI di P12.
