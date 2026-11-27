@@ -85,6 +85,16 @@ Objek DIGILIB sudah disetujui dosen; pembagian peran dan format `Co-authored-by`
 
 Yang masih bisa dikerjakan agent: uji rollback, konversi laporan ke PDF, dan push commit (dengan izin).
 
+## Rencana sesi berikutnya (besok)
+
+1. P13 — pola sama seperti P9–P12: saya jelaskan dulu, user konfirmasi paham, lalu saya kerjakan
+2. P14 — pola sama: jelaskan → konfirmasi → kerjakan
+3. Setelah itu lanjut ke 9 item Human
+
+Pengingat penting: 5 dari 9 item (UAT, daftar hadir, tanda tangan peer review,
+tanda tangan readiness report, persetujuan keputusan/strategi) sebaiknya beres
+**sebelum P14 dikunci**. Saya akan mengingatkannya tepat sebelum P14.
+
 ## Berikutnya
 
 P13 — Regression: jalankan suite yang sama di `v1-baseline` dan `v2-fixes`
