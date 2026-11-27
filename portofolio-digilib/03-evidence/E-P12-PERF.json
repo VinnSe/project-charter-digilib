@@ -1,0 +1,14 @@
+{
+    "id": "P12-PERF",
+    "build": "v1-baseline",
+    "commit": "6e30775",
+    "data": [
+        "20 request GET /book",
+        "lingkungan lokal sqlite"
+    ],
+    "expected": "rata-rata maksimal 2 detik dan p95 terukur",
+    "actual": "{\"request\":20,\"rata_rata_detik\":0.013,\"p95_detik\":0.0116,\"min_detik\":0.0072,\"maks_detik\":0.0907}",
+    "status": "lulus",
+    "penguji": "Ade",
+    "waktu": "2026-11-27T17:21:27+07:00"
+}

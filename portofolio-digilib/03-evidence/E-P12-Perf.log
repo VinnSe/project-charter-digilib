@@ -1,0 +1,8 @@
+PHPUnit 9.6.3 by Sebastian Bergmann and contributors.
+
+P12Performance (Tests\Feature\Pjbl\P12Performance)
+ ✔ P12 profil waktu respons katalog
+
+Time: 00:01.225, Memory: 30.00 MB
+
+OK (1 test, 1 assertion)

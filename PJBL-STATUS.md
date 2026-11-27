@@ -46,10 +46,22 @@ Commit menyusul. File `05-laporan/implementation-readiness-report.md` dan
 → Conditional Go setelah 5 syarat. Strategi: pilot + mini paralel.
 Go-live checklist: 3 dari 10 item selesai. Tanda tangan UAT/PIC sengaja kosong.
 
+## P12 — selesai
+
+File `06-metrik/dashboard-kpi.md` dan `analisis-penyebab-dan-rekomendasi.md`.
+Bukti performa baru: `E-P12-PERF.json` (20 request `/book`, rata-rata 0,0130
+detik, p95 0,0116 detik, maks 0,0907 detik) dan `E-P12-Perf.log`.
+Dashboard 10 indikator: 4 Hijau, 2 Merah, 4 Kuning. DRE 100% ditandai
+provisional (D = 0). Code coverage tidak diukur (Xdebug/PCOV absen).
+Defect density 1,49/KLOC dari 2013 baris `app/` dan 3 defect unik.
+Pareto: 3 dari 5 kegagalan (60%) pada area akses/role. 5 Whys menemukan akar
+proses: kriteria hak akses tidak masuk Definition of Done. 6 rekomendasi
+berpemilik dan bertarget 30 Nov 2026.
+
 ## Berikutnya
 
-P12 — Metrik kualitas: dashboard minimal 8 KPI dengan status Hijau/Kuning/Merah,
-analisis Pareto dan 5 Whys, serta rekomendasi berpemilik dan bertarget.
+P13 — Regression: jalankan suite yang sama di `v1-baseline` dan `v2-fixes`
+lewat dua worktree, retest + regression, bandingkan metrik, susun rantai bukti.
 
 ## Perintah berguna
 
