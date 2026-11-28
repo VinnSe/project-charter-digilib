@@ -1,0 +1,24 @@
+PHPUnit 9.6.3 by Sebastian Bergmann and contributors.
+
+P9Acceptance (Tests\Feature\Pjbl\P9Acceptance)
+ ✔ Ac 1 anggota memulai peminjaman
+ ✔ Ac 2 buku muncul di keranjang
+ ✔ Ac 3 anggota ditolak di halaman admin
+
+P9Integration (Tests\Feature\Pjbl\P9Integration)
+ ✔ Int 01 login borrow membuat transaksi
+ ✔ Int 02 add cart menambah detail dan stok dipinjam
+ ✔ Int 03 duplikat buku ditolak
+ ✔ Int 04 stok habis ditolak
+ ✔ Int 05 selesai pinjam mengubah status
+
+P9System (Tests\Feature\Pjbl\P9System)
+ ✔ Sys 01 alur lengkap sampai laporan
+ ✔ Sys 02 admin tidak boleh membuka borrow
+ ✔ Sys 03 anggota tidak boleh membuka add book
+ ✔ Sys 04 waktu respons katalog
+ ✔ Sys 05 kelengkapan elemen halaman cart
+
+Time: 00:15.611, Memory: 34.00 MB
+
+OK (13 tests, 27 assertions)

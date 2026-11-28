@@ -1,0 +1,13 @@
+{
+    "id": "AC-03",
+    "build": "v2-fixes",
+    "commit": "7819145",
+    "data": [
+        "student@gmail.com"
+    ],
+    "expected": "Diberikan akun anggota, ketika membuka /add-book, maka ditolak dengan 403",
+    "actual": "http=403",
+    "status": "lulus",
+    "penguji": "Fathan",
+    "waktu": "2026-11-28T13:15:51+07:00"
+}

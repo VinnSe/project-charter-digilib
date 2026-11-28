@@ -1,0 +1,14 @@
+{
+    "id": "SYS-01",
+    "build": "v1-baseline",
+    "commit": "6e30775",
+    "data": [
+        "student@gmail.com",
+        "BK-001"
+    ],
+    "expected": "halaman /report dapat dibuka setelah alur peminjaman",
+    "actual": "{\"http_report\":200}",
+    "status": "lulus",
+    "penguji": "Fathan",
+    "waktu": "2026-11-28T13:15:29+07:00"
+}

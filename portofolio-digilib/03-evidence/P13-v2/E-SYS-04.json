@@ -1,0 +1,14 @@
+{
+    "id": "SYS-04",
+    "build": "v2-fixes",
+    "commit": "7819145",
+    "data": [
+        "10 request GET /book",
+        "lingkungan lokal"
+    ],
+    "expected": "rata-rata maksimal 2 detik",
+    "actual": "{\"request\":10,\"rata_rata_detik\":0.0373}",
+    "status": "lulus",
+    "penguji": "Fathan",
+    "waktu": "2026-11-28T13:15:52+07:00"
+}

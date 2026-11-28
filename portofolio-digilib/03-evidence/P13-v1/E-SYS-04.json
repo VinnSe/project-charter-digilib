@@ -1,0 +1,14 @@
+{
+    "id": "SYS-04",
+    "build": "v1-baseline",
+    "commit": "6e30775",
+    "data": [
+        "10 request GET /book",
+        "lingkungan lokal"
+    ],
+    "expected": "rata-rata maksimal 2 detik",
+    "actual": "{\"request\":10,\"rata_rata_detik\":0.0362}",
+    "status": "lulus",
+    "penguji": "Fathan",
+    "waktu": "2026-11-28T13:15:30+07:00"
+}

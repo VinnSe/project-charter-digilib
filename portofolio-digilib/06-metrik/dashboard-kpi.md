@@ -12,7 +12,7 @@ belum terukur, **Merah** = target tidak terpenuhi.
 | 1 | Pass rate | ≥ 95% | 61,5% (8 dari 13) | Merah | E-P9-PHPUnit.log |
 | 2 | Defect Critical + Major terbuka | 0 / maks. 2 | 3 Major | Merah | DEF-01…03 |
 | 3 | DRE | ≥ 85% | 100% (provisional) | Kuning | 04-defect-log/defect-log.md |
-| 4 | Defect density | ≤ 4 per KLOC | 1,49 per KLOC | Hijau | 2013 baris `app/` + 3 defect |
+| 4 | Defect density | ≤ 4 per KLOC | 1,63 per KLOC | Hijau | 1838 baris `app/` v1 + 3 defect |
 | 5 | Requirement coverage | 100% alur utama | 100% | Hijau | test-plan.md, test-case.md |
 | 6 | Code coverage | ≥ 80% | tidak diukur | Kuning | Xdebug/PCOV absen |
 | 7 | Waktu respons rata-rata `/book` | ≤ 2 detik | 0,0130 detik | Hijau | E-P12-PERF.json |
@@ -36,6 +36,10 @@ Catatan penting:
    kecil dari rata-rata karena ada satu request lambat yang menaikkan rata-rata.
 4. **Availability tidak diklaim.** Rumusnya `MTTF ÷ (MTTF + MTTR)`, tetapi data
    produksi tidak tersedia. Indikator ini dibiarkan belum terukur.
+5. **Koreksi defect density (P13).** Jumlah baris `app/` dihitung ulang dari ref
+   git dengan metode yang sama untuk kedua build: v1 = 1838 baris, v2 = 2013
+   baris. Angka 2013 pada versi dashboard ini sebelumnya keliru disebut sebagai
+   baris v1. Detail ada di `05-laporan/regression-test-report.md`.
 
 Semua angka di atas berasal dari lingkungan lokal dengan sqlite in-memory.
 Tidak ada angka yang diklaim sebagai kinerja produksi.
@@ -44,6 +48,8 @@ Tidak ada angka yang diklaim sebagai kinerja produksi.
 
 - Pass rate = lulus ÷ dieksekusi × 100% = 8 ÷ 13 × 100% = 61,5%
 - DRE = E ÷ (E + D) = 3 ÷ (3 + 0) = 100% (provisional)
-- Defect density = defect ÷ KLOC = 3 ÷ 2,013 = 1,49 per KLOC
+- Defect density = defect ÷ KLOC = 3 ÷ 1,838 = 1,63 per KLOC (dihitung ulang
+  saat P13; angka 1,49 sebelumnya memakai 2013 baris `app/`, yaitu jumlah
+  baris v2, bukan v1)
 - Requirement coverage = alur utama yang tercakup ÷ total alur utama = 100%
 - p95 = nilai ke-19 dari 20 hasil pengukuran setelah diurutkan

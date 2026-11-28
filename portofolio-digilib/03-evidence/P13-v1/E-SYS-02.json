@@ -1,0 +1,13 @@
+{
+    "id": "SYS-02",
+    "build": "v1-baseline",
+    "commit": "6e30775",
+    "data": [
+        "admin@gmail.com"
+    ],
+    "expected": "akses /borrow ditolak dengan 403",
+    "actual": "{\"http\":302}",
+    "status": "gagal",
+    "penguji": "Fathan",
+    "waktu": "2026-11-28T13:15:29+07:00"
+}

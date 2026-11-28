@@ -1,0 +1,15 @@
+{
+    "id": "INT-04",
+    "build": "v1-baseline",
+    "commit": "6e30775",
+    "data": [
+        "student@gmail.com",
+        "BK-001",
+        "stock=1, being_borrowed=1"
+    ],
+    "expected": "ditolak, tidak ada detail baru",
+    "actual": "{\"jumlah_detail\":1,\"stok\":1,\"sedang_dipinjam\":1}",
+    "status": "gagal",
+    "penguji": "Dafit",
+    "waktu": "2026-11-28T13:15:29+07:00"
+}

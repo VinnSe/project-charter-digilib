@@ -1,0 +1,13 @@
+{
+    "id": "AC-01",
+    "build": "v2-fixes",
+    "commit": "7819145",
+    "data": [
+        "student@gmail.com"
+    ],
+    "expected": "Diberikan akun anggota, ketika membuka /borrow, maka transaksi dibuat dan diarahkan ke /cart",
+    "actual": "http=302, transaksi=ada",
+    "status": "lulus",
+    "penguji": "Fathan",
+    "waktu": "2026-11-28T13:15:49+07:00"
+}

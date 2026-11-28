@@ -1,6 +1,6 @@
 # STATUS PJBL MK35 — DIGILIB
 
-Diperbarui: 27 Nov 2026.
+Diperbarui: 28 Nov 2026.
 
 ## Posisi
 
@@ -9,7 +9,8 @@ Diperbarui: 27 Nov 2026.
 - 5 modul: autentikasi/role, katalog buku & kategori, peminjaman, keranjang, laporan
 - Objek sudah disetujui dosen
 - Tag lokal: `v1-baseline` = `6e30775`, `v2-fixes` = `7819145` (belum di-push)
-- HEAD kerja: `2c3d97c`, remote masih `7819145`, belum ada push artefak PJBL
+- HEAD kerja: `63e2920` sebelum commit P13; remote masih `7819145`, belum ada push artefak PJBL
+- Worktree regression: `D:/digilib-pjbl-v1` (`6e30775`) dan `D:/digilib-pjbl-v2` (`7819145`)
 
 ## Keputusan kelompok
 
@@ -29,8 +30,6 @@ Commit `ddb9c1c`. Test dijalankan di worktree `D:\digilib-pjbl-v1` pada `v1-base
 Defect: DEF-01 role (SYS-02, SYS-03, AC-03), DEF-02 stok habis (INT-04),
 DEF-03 status/session (INT-05). Bukti di `portofolio-digilib/03-evidence/`.
 
-Pengecekan awal di v2: 13/13 lulus (scratch, bukan bukti formal P13).
-
 ## P10 — selesai
 
 Commit `2c3d97c`. File `portofolio-digilib/06-metrik/quality-checklist.md`.
@@ -40,7 +39,7 @@ Checklist 8 butir: 3 Ya, 4 Tidak, 1 belum terukur.
 
 ## P11 — selesai
 
-Commit menyusul. File `05-laporan/implementation-readiness-report.md` dan
+Commit `851f756`. File `05-laporan/implementation-readiness-report.md` dan
 `go-live-checklist.md`. Tabel kriteria memakai angka nyata P9: pass rate 61,5%,
 3 Major terbuka, 3 pelanggaran akses role. Keputusan usulan: No-Go rilis penuh
 → Conditional Go setelah 5 syarat. Strategi: pilot + mini paralel.
@@ -48,15 +47,36 @@ Go-live checklist: 3 dari 10 item selesai. Tanda tangan UAT/PIC sengaja kosong.
 
 ## P12 — selesai
 
-File `06-metrik/dashboard-kpi.md` dan `analisis-penyebab-dan-rekomendasi.md`.
-Bukti performa baru: `E-P12-PERF.json` (20 request `/book`, rata-rata 0,0130
-detik, p95 0,0116 detik, maks 0,0907 detik) dan `E-P12-Perf.log`.
+Commit `dfd302b`. File `06-metrik/dashboard-kpi.md` dan
+`analisis-penyebab-dan-rekomendasi.md`.
+Bukti performa: `E-P12-PERF.json` (20 request `/book`, rata-rata 0,0130 detik,
+p95 0,0116 detik, maks 0,0907 detik) dan `E-P12-Perf.log`.
 Dashboard 10 indikator: 4 Hijau, 2 Merah, 4 Kuning. DRE 100% ditandai
 provisional (D = 0). Code coverage tidak diukur (Xdebug/PCOV absen).
-Defect density 1,49/KLOC dari 2013 baris `app/` dan 3 defect unik.
 Pareto: 3 dari 5 kegagalan (60%) pada area akses/role. 5 Whys menemukan akar
 proses: kriteria hak akses tidak masuk Definition of Done. 6 rekomendasi
 berpemilik dan bertarget 30 Nov 2026.
+Koreksi P13: defect density v1 di dashboard diubah dari 1,49 menjadi 1,63
+per KLOC karena 2013 baris adalah jumlah baris v2, bukan v1.
+
+## P13 — selesai
+
+Commit: (diisi setelah commit dokumentasi P13).
+Suite 13 test yang sama dijalankan di dua worktree dengan environment identik.
+Hasil: v1 `6e30775` 8/13 lulus (61,5%), v2 `7819145` 13/13 lulus (100%),
+27 assertion di kedua build, 0 defect baru.
+
+File:
+- `03-evidence/P13-v1/` dan `P13-v2/` — 13 bukti JSON + log PHPUnit per build
+- `03-evidence/rantai-bukti-p13.md` — requirement → test → run → defect → commit → retest
+- `05-laporan/regression-test-report.md` — analisis dampak, strategi suite, hasil, audit bukti
+- `06-metrik/perbandingan-v1-v2.md` — selisih absolut/relatif dan ancaman validitas
+- `04-defect-log/defect-log.md` — status DEF-01…03 berubah menjadi Closed
+
+DEF-01, DEF-02, DEF-03 dinyatakan Closed. Dua syarat Conditional Go (defect
+tertutup dan pass rate minimal 95%) sudah terpenuhi. Screenshot visual belum
+dibuat karena eksekusi memakai sqlite in-memory; bukti yang diaudit adalah log,
+JSON, dan rantai bukti.
 
 ## Yang masih harus diselesaikan kelompok sendiri
 
@@ -85,10 +105,10 @@ Objek DIGILIB sudah disetujui dosen; pembagian peran dan format `Co-authored-by`
 
 Yang masih bisa dikerjakan agent: uji rollback, konversi laporan ke PDF, dan push commit (dengan izin).
 
-## Rencana sesi berikutnya (besok)
+## Rencana sesi berikutnya
 
-1. P13 — pola sama seperti P9–P12: saya jelaskan dulu, user konfirmasi paham, lalu saya kerjakan
-2. P14 — pola sama: jelaskan → konfirmasi → kerjakan
+1. P14 — pola sama seperti P9–P13: saya jelaskan dulu, user konfirmasi paham, lalu saya kerjakan
+2. P15 — pola sama: jelaskan → konfirmasi → kerjakan
 3. Setelah itu lanjut ke 9 item Human
 
 Pengingat penting: 5 dari 9 item (UAT, daftar hadir, tanda tangan peer review,
@@ -97,14 +117,16 @@ tanda tangan readiness report, persetujuan keputusan/strategi) sebaiknya beres
 
 ## Berikutnya
 
-P13 — Regression: jalankan suite yang sama di `v1-baseline` dan `v2-fixes`
-lewat dua worktree, retest + regression, bandingkan metrik, susun rantai bukti.
+P14 — Laporan akhir terintegrasi: gabungkan bukti P9–P13, quality checklist,
+keputusan readiness, dashboard, dan regresi menjadi satu laporan + evidence index.
+Laporan P14 masih berstatus awal sampai tanda tangan dan item Human dilengkapi.
 
 ## Perintah berguna
 
 ```bash
-cd /d/digilib-pjbl
-PJBL_BUILD_LABEL="v1-baseline" PJBL_COMMIT="6e30775" \
-PJBL_EVIDENCE_DIR="D:/digilib-pjbl/portofolio-digilib/03-evidence" \
-php vendor/bin/phpunit -c phpunit.pjbl.xml --testdox
+cd /d/digilib-pjbl-v2
+PJBL_BUILD_LABEL="$(git describe --tags --always)" \
+PJBL_COMMIT="$(git rev-parse --short HEAD)" \
+PJBL_EVIDENCE_DIR="D:/digilib-pjbl/portofolio-digilib/03-evidence/P13-v2" \
+php vendor/bin/phpunit -c phpunit.pjbl.xml --filter 'test_(int|sys|ac)_' --testdox
 ```
