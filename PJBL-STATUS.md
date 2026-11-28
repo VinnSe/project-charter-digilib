@@ -84,13 +84,22 @@ dan memakai akun login (`Auth::id()` / `user_id`).
 
 Belum bisa dikerjakan agent; wajib dilengkapi sebelum submission.
 
+Form kosong sudah disiapkan: `02-test-case/uat-form.md`,
+`05-laporan/daftar-hadir-pelatihan.md`, `05-laporan/persetujuan-keputusan.md`,
+dan blok tanda tangan di `02-test-case/peer-review-form.md`. Panduan lengkap
+ada di `PANDUAN-5-ITEM.md` (root repository). Go-live checklist sudah
+diselaraskan dengan P13: 5 dari 10 item selesai.
+
 | Item | Waktu terbaik | Alasan |
 |---|---|---|
-| UAT ditandatangani pemilik aplikasi (form belum dibuat, akan disiapkan kosong) | Sebelum P14 | P11 menyatakan UAT belum; keputusan final butuh status terbaru |
-| Daftar hadir pelatihan admin/anggota | Sebelum P14 | syarat Conditional Go, harus masuk sebelum keputusan dikunci |
-| Tanda tangan form peer review (`02-test-case/peer-review-form.md`) | Segera, paling lambat sebelum P14 | form sudah jadi sejak P9 |
-| Peer assessment tiap anggota | Saat P15 | memang luaran P15 |
-| Refleksi individu | Saat P15 | memang luaran P15 |
+| UAT ditandatangani pemilik aplikasi (`02-test-case/uat-form.md`) | Sebelum P14 | P11 menyatakan UAT belum; keputusan final butuh status terbaru |
+| Daftar hadir pelatihan admin/anggota (`05-laporan/daftar-hadir-pelatihan.md`) | Sebelum P14 | syarat Conditional Go, harus masuk sebelum keputusan dikunci |
+| Tanda tangan form peer review (`02-test-case/peer-review-form.md`) | Segera, paling lambat sebelum P14 | form sudah jadi sejak P9, blok tanda tangan sudah ditambahkan |
+| Persetujuan keputusan di `05-laporan/persetujuan-keputusan.md` | Sebelum P14 | keputusan usulan belum disetujui pemilik/dosen |
+| Tanda tangan readiness report (`implementation-readiness-report.md` bagian 10) | Sebelum P14 | kolom sengaja kosong sampai diisi orangnya |
+
+Peer assessment dan refleksi individu tetap menjadi luaran P15, bukan bagian
+dari lima item sebelum P14.
 
 Kalau semua ditunda sampai setelah P15, P11/P12/P14 harus direvisi agar statusnya konsisten. Hindari itu.
 
@@ -98,10 +107,12 @@ Kalau semua ditunda sampai setelah P15, P11/P12/P14 harus direvisi agar statusny
 
 | Item | Penanggung | Waktu |
 |---|---|---|
-| Tanda tangan persetujuan di `implementation-readiness-report.md` (pemilik aplikasi, ketua tim QA, dosen) | orang sungguhan | sebelum P14 |
-| Persetujuan keputusan usulan No-Go/Conditional Go dan strategi pilot + mini paralel | pemilik aplikasi/dosen | sebelum P14 |
 | Menyampaikan presentasi 15 menit, demo 4 menit, dan tanya jawab 5 menit | anggota kelompok | saat P15 |
 | Izin push commit ke GitHub | user | sebelum submission |
+
+Dua item yang sebelumnya dicatat di sini — tanda tangan readiness report dan
+persetujuan keputusan — sudah masuk ke dalam lima item di atas supaya tidak
+terhitung dua kali.
 
 Objek DIGILIB sudah disetujui dosen; pembagian peran dan format `Co-authored-by` sudah diputuskan, jadi tidak perlu diulang.
 

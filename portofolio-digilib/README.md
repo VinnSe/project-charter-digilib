@@ -57,12 +57,16 @@ untuk menelusuri kontribusi tiap anggota.
 ## Struktur folder
 
 - `01-test-plan/` — rencana dan ruang lingkup pengujian
-- `02-test-case/` — daftar test case dan form peer review
+- `02-test-case/` — daftar test case, form peer review, dan form UAT kosong
 - `03-evidence/` — bukti hasil eksekusi P9, P12, dan P13
 - `04-defect-log/` — daftar defect dan status verifikasinya
-- `05-laporan/` — laporan terintegrasi, evidence index, dan regression report
+- `05-laporan/` — laporan terintegrasi, evidence index, regression report,
+  daftar hadir pelatihan, dan form persetujuan keputusan
 - `06-metrik/` — quality checklist, dashboard KPI, dan perbandingan v1–v2
 - `07-refleksi/` — skrip demo, peer assessment, refleksi
+
+Form kosong dan panduan pengisian 5 item Human ada di `PANDUAN-5-ITEM.md` di
+root repository.
 
 ## Status singkat
 

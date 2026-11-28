@@ -13,3 +13,19 @@ Catatan: draf ini disusun dari hasil P9 yang benar-benar dijalankan (`E-P9-PHPUn
 | Kejelasan bukti (bertanggal, dapat diverifikasi) | M. Aovar Ahdan (Documentation Lead) | 13 file JSON memuat ID, build, commit, data uji, expected, actual, status, penguji, dan waktu | Bukti SYS-02 dan SYS-03 hanya mencatat kode HTTP, tanpa cuplikan pesan/error | Tambahkan cuplikan respons pada bukti akses agar lebih mudah diverifikasi |
 
 Pengreview: **belum diisi — menunggu konfirmasi dan tanda tangan anggota**  Tanggal: ..................
+
+## Konfirmasi dan tanda tangan anggota
+
+Isi kolom Status konfirmasi dengan: Setuju / Setuju dengan catatan / Perlu koreksi.
+Kolom Nama, Tanda tangan, dan Tanggal diisi oleh masing-masing anggota.
+
+| No | Pengreview | Status konfirmasi | Nama | Tanda tangan | Tanggal |
+|---|---|---|---|---|---|
+| 1 | Kelvin Septio |  |  |  |  |
+| 2 | Fathan Al Mu'thi Arsyad |  |  |  |  |
+| 3 | M. Dafit Irwansyah |  |  |  |  |
+| 4 | Ade Henry Febrian |  |  |  |  |
+| 5 | M. Aovar Ahdan |  |  |  |  |
+
+Catatan tambahan / koreksi: ................................................
+
