@@ -1,0 +1,25 @@
+# Verifikasi Konversi Data Master — DIGILIB v2
+Waktu: 2026-11-28 18:05:11 SEAST
+Sumber acuan: 01-test-plan/test-plan.md (4 akun, 5 kategori rekaan, BK-001…BK-006).
+Database: digilib_v2 (v2-fixes / 7819145).
+
+## 1. Kondisi sebelum konversi
+users=4,categories=1,books=2
+kategori: Fiksi
+buku: BK-001, BK-002
+
+## 2. Muat data master yang belum ada lewat seeder/tinker
+seeder selesai
+
+## 3. Kondisi setelah konversi
+users=4,categories=5,books=6
+kategori: Fiksi, Non-Fiksi, Teknologi, Sejarah, Novel
+buku: BK-001, BK-002, BK-003, BK-004, BK-005, BK-006
+akun: admin@gmail.com, pustakawan@gmail.com, student@gmail.com, user@gmail.com
+
+## 4. Cek duplikat kode buku
+Jumlah kode buku duplikat: 0
+
+## 5. Verifikasi
+HASIL: SESUAI — 4 akun, 5 kategori, 6 buku BK-001…BK-006, tanpa duplikat.
+Status konversi data master: LULUS (bukti: /d/digilib-pjbl/portofolio-digilib/03-evidence/data-conversion-verification.log).

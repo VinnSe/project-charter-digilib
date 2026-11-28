@@ -22,6 +22,8 @@ bukti adalah `v1-baseline` dengan commit `6e30775`.
 | `P13-v2/` | 13 bukti JSON + `E-P13-v2-PHPUnit.log`, label `v2-fixes` / `7819145` |
 | `rantai-bukti-p13.md` | requirement → test → run → defect → commit → retest |
 | `P13-screenshots/` | 8 screenshot sebelum/sesudah untuk DEF-01…03 + README metadata |
+| `rollback-test.log` | log uji restore database dan bukti `backup-digilib-v2-20261128.sql` |
+| `data-conversion-verification.log` | verifikasi 4 akun, 5 kategori, BK-001…BK-006, 0 duplikat |
 | `../05-laporan/regression-test-report.md` | analisis dampak, suite, hasil, dan audit bukti |
 | `../06-metrik/perbandingan-v1-v2.md` | tabel metrik sebelum/sesudah |
 

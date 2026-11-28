@@ -90,8 +90,14 @@ dibiarkan sebagai arsip karena sistem sebelumnya berbasis catatan manual.
 Langkah: ekstrak → bersihkan kode `BK-001…BK-006` dan duplikat → muat lewat
 seeder → verifikasi jumlah baris dan sampel nilai.
 
+Verifikasi 28 November 2026: `digilib_v2` berisi 4 akun, 5 kategori
+(Fiksi, Non-Fiksi, Teknologi, Sejarah, Novel), dan 6 buku BK-001…BK-006 dengan
+0 duplikat. Bukti: `03-evidence/data-conversion-verification.log`.
+
 Pelatihan: satu sesi 60 menit untuk admin dan anggota, panduan satu halaman
-(login, meminjam, melihat laporan, penanganan transaksi gagal). Belum terlaksana.
+(login, meminjam, melihat laporan, penanganan transaksi gagal). Sudah tercatat
+di `05-laporan/daftar-hadir-pelatihan.md` dengan 5 peserta; tanda tangan
+menyusul.
 
 ## 8. Rencana rollback
 
