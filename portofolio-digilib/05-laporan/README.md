@@ -11,4 +11,5 @@ Berisi laporan terintegrasi, evidence index, dan dokumen kesiapan implementasi. 
 | `persetujuan-keputusan.md` | persetujuan No-Go/Conditional Go + strategi |
 | `rollback-test-report.md` | bukti uji restore dan status rollback |
 | `laporan-akhir.md` | laporan akhir terintegrasi P14 (7 bagian) |
+| `laporan-akhir.docx` | versi Word editable dari laporan yang sama |
 | `evidence-index.md` | indeks seluruh bukti untuk P14 |
