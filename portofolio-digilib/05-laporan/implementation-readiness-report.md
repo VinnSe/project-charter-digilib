@@ -38,7 +38,7 @@ Ringkasan dari quality checklist P10 (ISO/IEC 25010 edisi 2011):
 | Waktu respons `/book` | maks. 2 detik | 0,0062 detik | Ya |
 | Elemen cart | min. 4 dari 5 | 5 dari 5 | Ya |
 | Transaksi selesai konsisten | 0 kegagalan | INT-05 gagal | Tidak |
-| Effectiveness (UAT) | min. 4 dari 5 | belum diisi | Belum terukur |
+| Effectiveness (UAT) | min. 4 dari 5 | 5 dari 5 diterima | Terukur |
 
 Angka performa berasal dari lingkungan lokal sqlite in-memory dan tidak
 diklaim sebagai kinerja produksi.

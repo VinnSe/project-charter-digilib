@@ -18,10 +18,11 @@ belum terukur, **Merah** = target tidak terpenuhi.
 | 7 | Waktu respons rata-rata `/book` | ≤ 2 detik | 0,0130 detik | Hijau | E-P12-PERF.json |
 | 8 | Waktu respons p95 | ≤ 3 detik | 0,0116 detik | Hijau | E-P12-PERF.json |
 | 9 | Availability / indikator keandalan | ≥ 99% | belum terukur | Kuning | tidak ada data MTTF/MTTR |
-| 10 | Kepuasan UAT | ≥ 4 dari 5 | belum diisi | Kuning | form UAT draft |
+| 10 | Kepuasan UAT | ≥ 4 dari 5 | 5 dari 5 diterima | Hijau | `uat-form.md` (status terbaru; tabel ini snapshot P12) |
 
-Ringkasan: 4 Hijau, 2 Merah, 4 Kuning. Dua indikator Merah menjadi perhatian
-utama: pass rate dan defect terbuka.
+Ringkasan: 5 Hijau, 2 Merah, 3 Kuning. Dua indikator Merah menjadi perhatian
+utama: pass rate dan defect terbuka. Kuning tersisa untuk DRE provisional,
+code coverage, dan availability — semuanya bukan indikator rilis yang final.
 
 Catatan penting:
 

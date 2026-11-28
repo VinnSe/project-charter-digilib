@@ -134,7 +134,7 @@ defect baru pada suite ini.
 | Rata-rata `/book`, 10 request | ≤ 2 detik | 0.0362 detik | 0.0373 detik | Terpenuhi | `E-SYS-04.json` di kedua build |
 | Defect density (metode sama) | ≤ 4 per KLOC | 1,63 per KLOC (3/1838 baris) | 0,00 per KLOC (0/2013 baris) | Terpenuhi | `git ls-tree` + `git show` pada `app/` |
 | Code coverage | ≥ 80% | tidak diukur | tidak diukur | Belum terukur | Xdebug/PCOV tidak terpasang |
-| UAT pemilik aplikasi | ≥ 4 dari 5 | belum diisi | belum diisi | Belum terukur | form UAT masih draft |
+| UAT pemilik aplikasi | ≥ 4 dari 5 | 5 dari 5 diterima | 5 dari 5 diterima | Terpenuhi | status terbaru di `02-test-case/uat-form.md`; baris ini snapshot P13 |
 
 Detail selisih dan ancaman validitas ada di `06-metrik/perbandingan-v1-v2.md`.
 

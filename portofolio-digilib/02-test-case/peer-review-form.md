@@ -12,7 +12,8 @@ Catatan: draf ini disusun dari hasil P9 yang benar-benar dijalankan (`E-P9-PHPUn
 | Keterlacakan (test → requirement → defect → bukti) | Ade Henry Febrian (Quality Analyst) | Setiap ID bukti cocok dengan baris di `test-case.md`; DEF-01…03 menunjuk ke ID bukti yang sama | AC-01…03 belum dipetakan ke nomor requirement yang lebih formal | Tambahkan kolom requirement ID pada tabel `test-case.md` |
 | Kejelasan bukti (bertanggal, dapat diverifikasi) | M. Aovar Ahdan (Documentation Lead) | 13 file JSON memuat ID, build, commit, data uji, expected, actual, status, penguji, dan waktu | Bukti SYS-02 dan SYS-03 hanya mencatat kode HTTP, tanpa cuplikan pesan/error | Tambahkan cuplikan respons pada bukti akses agar lebih mudah diverifikasi |
 
-Pengreview: **belum diisi — menunggu konfirmasi dan tanda tangan anggota**  Tanggal: ..................
+Pengreview: kelima anggota (lihat tabel konfirmasi di bawah) — nama dan tanggal
+28 November 2026 sudah terisi; tanda tangan menyusul.  Tanggal: 28 November 2026
 
 ## Konfirmasi dan tanda tangan anggota
 
