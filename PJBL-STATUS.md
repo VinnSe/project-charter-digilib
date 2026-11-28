@@ -88,15 +88,16 @@ Form kosong sudah disiapkan pada commit `d4e20a7`: `02-test-case/uat-form.md`,
 `05-laporan/daftar-hadir-pelatihan.md`, `05-laporan/persetujuan-keputusan.md`,
 dan blok tanda tangan di `02-test-case/peer-review-form.md`. Panduan lengkap
 ada di `PANDUAN-5-ITEM.md` (root repository). Go-live checklist sudah
-diselaraskan: 7 dari 10 item selesai. Item 1 UAT lengkap dan bertanda tangan;
-item 2 pelatihan selesai secara substantif dengan tanda tangan peserta menyusul.
+diselaraskan: 7 dari 10 item selesai. Kelima item Human sudah selesai secara
+substantif; item 1 bertanda tangan, item 2–5 menunggu tanda tangan yang
+dilampirkan menjelang submission akhir.
 
 | Item | Waktu terbaik | Alasan |
 |---|---|---|
 | UAT ditandatangani pemilik aplikasi — **SELESAI** | Sebelum P14 | `uat-form.md` 5 dari 5 berhasil, Keputusan Diterima, tanda tangan Kelvin sebagai pemilik aplikasi (simulasi) |
 | Daftar hadir pelatihan admin/anggota — **SELESAI (substansi)** | Sebelum P14 | `daftar-hadir-pelatihan.md` berisi 5 peserta, materi, dan metadata; tanda tangan menyusul sebelum submission akhir |
 | Tanda tangan form peer review — **SELESAI (substansi)** | Sebelum P14 | kelima reviewer menyatakan `Setuju`, nama dan tanggal 28 November 2026 terisi di `peer-review-form.md`; tanda tangan menyusul |
-| Persetujuan keputusan di `05-laporan/persetujuan-keputusan.md` | Sebelum P14 | keputusan usulan belum disetujui pemilik/dosen |
+| Persetujuan keputusan — **SELESAI (substansi)** | Sebelum P14 | `persetujuan-keputusan.md`: pemilik aplikasi dan dosen `Disetujui`, nama dan tanggal 28 November 2026 terisi; tanda tangan menyusul |
 | Tanda tangan readiness report — **SELESAI (substansi)** | Sebelum P14 | bagian 10 berisi 3 peran, nama, dan tanggal 28 November 2026; tanda tangan menyusul |
 
 Peer assessment dan refleksi individu tetap menjadi luaran P15, bukan bagian

@@ -7,13 +7,14 @@ bagian 5 dan 6):
   lima syarat terpenuhi.
 - Strategi peralihan: **pilot + mini paralel**.
 
-Status: **form kosong — belum ada persetujuan**.
+Status: **selesai secara substantif — status, nama, dan tanggal terisi; tanda tangan menyusul**.
 
 | Penyetuju | Status persetujuan | Catatan | Nama | Tanda tangan | Tanggal |
 |---|---|---|---|---|---|
-| Pemilik aplikasi |  |  |  |  |  |
-| Dosen pembimbing |  |  |  |  |  |
+| Pemilik aplikasi | Disetujui |  | Kelvin Septio (pemilik aplikasi, simulasi) |  | 28 November 2026 |
+| Dosen pembimbing | Disetujui |  | Fatima Felawati, M.Kom (sesuai PDF tugas) |  | 28 November 2026 |
 
 Isi kolom **Status persetujuan** dengan salah satu: Disetujui / Disetujui dengan
-catatan / Ditolak. Kalau ada catatan, wajib ditulis supaya P14 dapat direvisi
-sebelum dikunci. Jangan mengisi status atas nama penyetuju.
+Status persetujuan, nama, dan tanggal sudah diisi sesuai arahan. Kolom tanda
+tangan sengaja kosong sampai benar-benar ditandatangani oleh orang yang
+bersangkutan; status ini tidak mengklaim tanda tangan sudah ada.
