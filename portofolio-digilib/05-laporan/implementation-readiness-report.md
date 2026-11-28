@@ -47,15 +47,19 @@ diklaim sebagai kinerja produksi.
 
 | Kriteria | Ambang | Hasil | Bukti | Status |
 |---|---|---|---|---|
-| Defect Critical terbuka | 0 | 0 | defect-log.md | Terpenuhi |
-| Defect Major terbuka | ≤ 2 + workaround | 3 | DEF-01…03 | Belum |
-| Pass rate | ≥ 95% | 61,5% | E-P9-PHPUnit.log | Belum |
-| Requirement coverage | 100% alur utama | tercakup | test-case.md | Terpenuhi |
-| Akses role sesuai checklist | 0 pelanggaran | 3 | E-SYS-02, E-SYS-03, E-AC-03 | Belum |
-| UAT disetujui | tanda tangan pemilik | draft | 02-test-case/peer-review-form.md | Belum |
-| Backup & rollback diuji | restore berhasil | belum | — | Belum |
-| Pelatihan pengguna | selesai | belum | — | Belum |
-| Konversi data terverifikasi | jumlah + sampel cocok | belum | — | Belum |
+| Defect Critical terbuka | 0 | 0 | `04-defect-log/defect-log.md` | Terpenuhi |
+| Defect Major terbuka | ≤ 2 + workaround | 0 | `defect-log.md`, `P13-v2/` | Terpenuhi |
+| Pass rate | ≥ 95% | 100% | `P13-v2/E-P13-v2-PHPUnit.log` | Terpenuhi |
+| Requirement coverage | 100% alur utama | 13 dari 13 | `test-case.md`, 13 bukti JSON | Terpenuhi |
+| Akses role sesuai checklist | 0 pelanggaran | 0 | `P13-v2/E-SYS-02.json`, `E-SYS-03.json`, `E-AC-03.json` | Terpenuhi |
+| UAT disetujui | tanda tangan pemilik | 5 dari 5 diterima | `02-test-case/uat-form.md` | Terpenuhi |
+| Backup & rollback diuji | restore berhasil | berhasil | `03-evidence/rollback-test.log` | Terpenuhi |
+| Pelatihan pengguna | selesai | 5 peserta | `05-laporan/daftar-hadir-pelatihan.md` | Terpenuhi* |
+| Konversi data terverifikasi | jumlah + sampel cocok | 4 akun, 5 kategori, 6 buku | `03-evidence/data-conversion-verification.log` | Terpenuhi |
+
+\* Pelatihan selesai secara substantif dengan 5 peserta; 4 dari 5 tanda tangan
+terpasang dan Dafit menyusul. Status ini tidak mengklaim kelima peserta sudah
+menandatangani.
 
 ## 5. Keputusan dan alasan
 
@@ -121,14 +125,16 @@ uji, bukan produksi.
 |---|---|---|---|
 | R-1 | Tiga Major di v1 | Sedang | sudah dibuktikan tertutup di `v2-fixes` pada P13 |
 | R-2 | Rollback | Sedang | sudah diuji 28 Nov 2026; restore berhasil (`rollback-test.log`) |
-| R-3 | UAT dan pelatihan | Sedang | UAT diterima 5 dari 5; pelatihan tercatat dengan 5 peserta, tanda tangan menyusul |
+| R-3 | UAT dan pelatihan | Sedang | UAT diterima 5 dari 5; pelatihan 4 dari 5 TTD, Dafit menyusul |
 
 ## 10. Persetujuan
 
 | Peran | Nama | Tanda tangan | Tanggal |
 |---|---|---|---|
-| Pemilik aplikasi | Kelvin Septio (pemilik aplikasi, simulasi) |  | 28 November 2026 |
-| Ketua tim QA | Kelvin Septio (Test Lead / koordinator) |  | 28 November 2026 |
-| Dosen pembimbing | Fatima Felawati, M.Kom (sesuai PDF tugas) |  | 28 November 2026 |
+| Pemilik aplikasi | Kelvin Septio (pemilik aplikasi, simulasi) | `03-evidence/tanda-tangan-uat-kelvin.jpeg` | 28 November 2026 |
+| Ketua tim QA | Kelvin Septio (Test Lead / koordinator) | `03-evidence/tanda-tangan-uat-kelvin.jpeg` | 28 November 2026 |
+| Dosen pembimbing | Fatima Felawati, M.Kom (sesuai PDF tugas) | menyusul | 28 November 2026 |
 
-Nama dan tanggal sudah diisi. Kolom tanda tangan sengaja kosong sampai benar-benar ditandatangani oleh orang yang bersangkutan.
+Nama dan tanggal sudah diisi. Tanda tangan Kelvin terpasang untuk kedua perannya;
+tanda tangan dosen pembimbing masih menyusul. Status ini tidak mengklaim dosen
+sudah menandatangani.

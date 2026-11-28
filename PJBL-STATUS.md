@@ -88,19 +88,20 @@ Form kosong sudah disiapkan pada commit `d4e20a7`: `02-test-case/uat-form.md`,
 `05-laporan/daftar-hadir-pelatihan.md`, `05-laporan/persetujuan-keputusan.md`,
 dan blok tanda tangan di `02-test-case/peer-review-form.md`. Panduan lengkap
 ada di `PANDUAN-5-ITEM.md` (root repository). Go-live checklist sudah
-diselaraskan: 10 dari 10 item selesai. Kelima item Human sudah selesai secara
-substantif; item 1 bertanda tangan, item 2–5 menunggu tanda tangan yang
-dilampirkan menjelang submission akhir. Uji rollback berhasil
-(`03-evidence/rollback-test.log`) dan konversi data terverifikasi
-(`03-evidence/data-conversion-verification.log`).
+diselaraskan: 10 dari 10 item selesai. Status tanda tangan per 28 November 2026:
+item 1 UAT lengkap; item 2 daftar hadir dan item 3 peer review masing-masing
+4 dari 5 (Dafit menyusul); item 4 readiness dan item 5 persetujuan memakai TTD
+Kelvin yang sama untuk perannya, sementara TTD dosen pembimbing menyusul. Uji
+rollback berhasil (`03-evidence/rollback-test.log`) dan konversi data
+terverifikasi (`03-evidence/data-conversion-verification.log`).
 
 | Item | Waktu terbaik | Alasan |
 |---|---|---|
 | UAT ditandatangani pemilik aplikasi — **SELESAI** | Sebelum P14 | `uat-form.md` 5 dari 5 berhasil, Keputusan Diterima, tanda tangan Kelvin sebagai pemilik aplikasi (simulasi) |
-| Daftar hadir pelatihan admin/anggota — **SELESAI (substansi)** | Sebelum P14 | `daftar-hadir-pelatihan.md` berisi 5 peserta, materi, dan metadata; tanda tangan menyusul sebelum submission akhir |
-| Tanda tangan form peer review — **SELESAI (substansi)** | Sebelum P14 | kelima reviewer menyatakan `Setuju`, nama dan tanggal 28 November 2026 terisi di `peer-review-form.md`; tanda tangan menyusul |
-| Persetujuan keputusan — **SELESAI (substansi)** | Sebelum P14 | `persetujuan-keputusan.md`: pemilik aplikasi dan dosen `Disetujui`, nama dan tanggal 28 November 2026 terisi; tanda tangan menyusul |
-| Tanda tangan readiness report — **SELESAI (substansi)** | Sebelum P14 | bagian 10 berisi 3 peran, nama, dan tanggal 28 November 2026; tanda tangan menyusul |
+| Daftar hadir pelatihan admin/anggota — **4 dari 5 TTD** | Sebelum P14 | `daftar-hadir-pelatihan.md`: Ade, Kelvin, Fathan, Ahdan terpasang; Dafit menyusul |
+| Tanda tangan form peer review — **4 dari 5 TTD** | Sebelum P14 | `peer-review-form.md`: kelima reviewer `Setuju`; TTD Kelvin, Fathan, Ade, Ahdan terpasang; Dafit menyusul |
+| Persetujuan keputusan — **TTD Kelvin terpasang** | Sebelum P14 | `persetujuan-keputusan.md`: pemilik aplikasi dan dosen `Disetujui`; TTD dosen menyusul |
+| Tanda tangan readiness report — **TTD Kelvin terpasang** | Sebelum P14 | bagian 10: Kelvin untuk Pemilik aplikasi & Ketua tim QA; dosen pembimbing menyusul |
 
 Peer assessment dan refleksi individu tetap menjadi luaran P15, bukan bagian
 dari lima item sebelum P14.

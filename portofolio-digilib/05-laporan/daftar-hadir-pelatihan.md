@@ -3,7 +3,7 @@
 Materi sesuai rencana P11 bagian 7: login, meminjam buku, melihat laporan, dan
 penanganan transaksi gagal. Durasi rencana: 60 menit.
 
-Status: **selesai secara substantif — metadata, materi, dan peserta terisi; tanda tangan peserta menyusul**.
+Status: **4 dari 5 tanda tangan terpasang; Dafit menyusul**.
 
 | Keterangan | Isi |
 |---|---|
@@ -15,16 +15,16 @@ Status: **selesai secara substantif — metadata, materi, dan peserta terisi; ta
 
 | No | Nama peserta | Peran (admin / anggota) | Tanda tangan |
 |---|---|---|---|
-| 1 | Ade Henry Febrian | admin |  |
-| 2 | Kelvin Septio | anggota |  |
-| 3 | M. Dafit Irwansyah | anggota |  |
-| 4 | Fathan Al Mu'thi Arsyad | anggota |  |
-| 5 | M. Aovar Ahdan | anggota |  |
+| 1 | Ade Henry Febrian | admin | `03-evidence/tanda-tangan-ade.jpeg` |
+| 2 | Kelvin Septio | anggota | `03-evidence/tanda-tangan-uat-kelvin.jpeg` |
+| 3 | M. Dafit Irwansyah | anggota | menyusul |
+| 4 | Fathan Al Mu'thi Arsyad | anggota | `03-evidence/tanda-tangan-fathan.jpeg` |
+| 5 | M. Aovar Ahdan | anggota | `03-evidence/tanda-tangan-ahdan.jpeg` |
 
 Jumlah hadir: 5 orang (admin: 1, anggota: 4).
 
 Catatan: template ini disiapkan untuk 5 peserta sesuai jumlah anggota kelompok.
-Peran dalam simulasi boleh dibagi, misalnya 1 admin dan 4 anggota. Isi hanya
-untuk orang yang benar-benar mengikuti sesi pelatihan. Tanda tangan harus milik
-peserta yang bersangkutan. Kalau pelatihan belum dilaksanakan, biarkan kosong
-dan jangan mengklaim selesai di P14.
+Peran dalam simulasi dibagi menjadi 1 admin dan 4 anggota. Tanda tangan Ade,
+Kelvin, Fathan, dan Ahdan sudah terpasang dari file di `03-evidence/`. Tanda
+tangan Dafit masih menyusul; status ini tidak mengklaim kelima peserta sudah
+menandatangani.

@@ -1,6 +1,6 @@
 # Form Peer Review — P9
 
-Diisi oleh anggota kelompok sendiri (sesuai arahan dosen). Status: **konfirmasi, nama, dan tanggal kelima reviewer sudah terisi; tanda tangan menyusul**.
+Diisi oleh anggota kelompok sendiri (sesuai arahan dosen). Status: **konfirmasi, nama, tanggal, dan 4 dari 5 tanda tangan terpasang; Dafit menyusul**.
 
 Catatan: draf ini disusun dari hasil P9 yang benar-benar dijalankan (`E-P9-PHPUnit.log` dan file `E-*.json`). Kolom "Pengreview yang disarankan" adalah usulan pembagian, bukan tanda tangan. Konfirmasi isi, nama, dan tanggal sudah terisi; form menjadi sah sebagai peer review setelah tanda tangan kelima anggota dilampirkan.
 
@@ -13,7 +13,8 @@ Catatan: draf ini disusun dari hasil P9 yang benar-benar dijalankan (`E-P9-PHPUn
 | Kejelasan bukti (bertanggal, dapat diverifikasi) | M. Aovar Ahdan (Documentation Lead) | 13 file JSON memuat ID, build, commit, data uji, expected, actual, status, penguji, dan waktu | Bukti SYS-02 dan SYS-03 hanya mencatat kode HTTP, tanpa cuplikan pesan/error | Tambahkan cuplikan respons pada bukti akses agar lebih mudah diverifikasi |
 
 Pengreview: kelima anggota (lihat tabel konfirmasi di bawah) — nama dan tanggal
-28 November 2026 sudah terisi; tanda tangan menyusul.  Tanggal: 28 November 2026
+28 November 2026 sudah terisi. Tanda tangan Kelvin, Fathan, Ade, dan Ahdan
+sudah terpasang; Dafit menyusul.  Tanggal: 28 November 2026
 
 ## Konfirmasi dan tanda tangan anggota
 
@@ -22,11 +23,11 @@ Kolom Nama, Tanda tangan, dan Tanggal diisi oleh masing-masing anggota.
 
 | No | Pengreview | Status konfirmasi | Nama | Tanda tangan | Tanggal |
 |---|---|---|---|---|---|
-| 1 | Kelvin Septio | Setuju | Kelvin Septio |  | 28 November 2026 |
-| 2 | Fathan Al Mu'thi Arsyad | Setuju | Fathan Al Mu'thi Arsyad |  | 28 November 2026 |
-| 3 | M. Dafit Irwansyah | Setuju | M. Dafit Irwansyah |  | 28 November 2026 |
-| 4 | Ade Henry Febrian | Setuju | Ade Henry Febrian |  | 28 November 2026 |
-| 5 | M. Aovar Ahdan | Setuju | M. Aovar Ahdan |  | 28 November 2026 |
+| 1 | Kelvin Septio | Setuju | Kelvin Septio | `03-evidence/tanda-tangan-uat-kelvin.jpeg` | 28 November 2026 |
+| 2 | Fathan Al Mu'thi Arsyad | Setuju | Fathan Al Mu'thi Arsyad | `03-evidence/tanda-tangan-fathan.jpeg` | 28 November 2026 |
+| 3 | M. Dafit Irwansyah | Setuju | M. Dafit Irwansyah | menyusul | 28 November 2026 |
+| 4 | Ade Henry Febrian | Setuju | Ade Henry Febrian | `03-evidence/tanda-tangan-ade.jpeg` | 28 November 2026 |
+| 5 | M. Aovar Ahdan | Setuju | M. Aovar Ahdan | `03-evidence/tanda-tangan-ahdan.jpeg` | 28 November 2026 |
 
 Catatan tambahan / koreksi: ................................................
 

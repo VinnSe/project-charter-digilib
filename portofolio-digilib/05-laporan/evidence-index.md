@@ -3,7 +3,7 @@
 Tanggal penyusunan: 28 November 2026. Sumber angka dan status diambil dari
 file bukti yang tercantum di bawah, bukan dari ingatan.
 
-Jumlah entri: 78.
+Jumlah entri: 81.
 
 Tanggal pada baris JSON diambil dari field `waktu`; tanggal pada dokumen
 pendamping diambil dari metadata file. Kolom Pemilik mengikuti field
@@ -56,7 +56,10 @@ pendamping diambil dari metadata file. Kolom Pemilik mengikuti field
 | — | Log PHPUnit | `03-evidence/P13-v1/E-P13-v1-PHPUnit.log` | 2026-11-28 | Tim QA | P13 v1 — 13 test, 27 assertion |
 | — | Log PHPUnit | `03-evidence/P13-v2/E-P13-v2-PHPUnit.log` | 2026-11-28 | Tim QA | P13 v2 — 13 test, 27 assertion |
 | — | Rantai bukti | `03-evidence/rantai-bukti-p13.md` | 2026-11-28 | Tim QA | requirement → test → run → defect → commit → retest |
-| — | Tanda tangan UAT | `03-evidence/tanda-tangan-uat-kelvin.jpeg` | 2026-11-28 | Kelvin | bukti tanda tangan item 1 |
+| — | Tanda tangan UAT | `03-evidence/tanda-tangan-uat-kelvin.jpeg` | 2026-11-28 | Kelvin | bukti tanda tangan item 1; dipakai ulang untuk form Kelvin |
+| — | Tanda tangan | `03-evidence/tanda-tangan-ade.jpeg` | 2026-11-28 | Ade | daftar hadir + peer review |
+| — | Tanda tangan | `03-evidence/tanda-tangan-fathan.jpeg` | 2026-11-28 | Fathan | daftar hadir + peer review |
+| — | Tanda tangan | `03-evidence/tanda-tangan-ahdan.jpeg` | 2026-11-28 | Aovar | daftar hadir + peer review |
 | — | Laporan | `05-laporan/regression-test-report.md` | 2026-11-28 | Tim QA | analisis dampak, suite, hasil, dan audit bukti |
 | — | Metrik | `06-metrik/perbandingan-v1-v2.md` | 2026-11-28 | Tim QA | tabel metrik v1 vs v2 |
 | — | Metrik | `06-metrik/dashboard-kpi.md` | 2026-11-28 | Tim QA | KPI dan RAG P12 |
@@ -64,10 +67,10 @@ pendamping diambil dari metadata file. Kolom Pemilik mengikuti field
 | — | Checklist | `06-metrik/quality-checklist.md` | 2026-11-27 | Tim QA | 18 poin: 12 Yes, 4 Partial, 2 No |
 | — | Defect log | `04-defect-log/defect-log.md` | 2026-11-28 | Tim QA | DEF-01…DEF-03, semua Closed di v2 |
 | — | Form UAT | `02-test-case/uat-form.md` | 2026-11-28 | Kelvin | 5 dari 5 berhasil, Diterima, bertanda tangan |
-| — | Form pelatihan | `05-laporan/daftar-hadir-pelatihan.md` | 2026-11-28 | Tim | 5 peserta; tanda tangan menyusul |
-| — | Form peer review | `02-test-case/peer-review-form.md` | 2026-11-28 | Kelompok 4 | 5 reviewer Setuju; tanda tangan menyusul |
-| — | Laporan kesiapan | `05-laporan/implementation-readiness-report.md` | 2026-11-28 | Kelvin | keputusan + 3 persetujuan; tanda tangan menyusul |
-| — | Form persetujuan | `05-laporan/persetujuan-keputusan.md` | 2026-11-28 | Kelvin & Dosen | Disetujui; tanda tangan menyusul |
+| — | Form pelatihan | `05-laporan/daftar-hadir-pelatihan.md` | 2026-11-28 | Tim | 5 peserta; 4 dari 5 TTD terpasang, Dafit menyusul |
+| — | Form peer review | `02-test-case/peer-review-form.md` | 2026-11-28 | Kelompok 4 | 5 reviewer Setuju; 4 dari 5 TTD, Dafit menyusul |
+| — | Laporan kesiapan | `05-laporan/implementation-readiness-report.md` | 2026-11-28 | Kelvin | keputusan + 3 persetujuan; TTD Kelvin terpasang, dosen menyusul |
+| — | Form persetujuan | `05-laporan/persetujuan-keputusan.md` | 2026-11-28 | Kelvin & Dosen | Disetujui; TTD Kelvin terpasang, dosen menyusul |
 | — | Panduan | `PANDUAN-5-ITEM.md` | — | Kelompok 4 | petunjuk kelima item Human |
 | — | Log operasional | `03-evidence/rollback-test.log` | 2026-11-28 | Aovar | uji restore berhasil, 28 Nov 2026 |
 | — | Backup database | `03-evidence/backup-digilib-v2-20261128.sql` | 2026-11-28 | Aovar | backup sumber untuk uji rollback |
@@ -97,4 +100,4 @@ pendamping diambil dari metadata file. Kolom Pemilik mengikuti field
 - P13 v2: 13 bukti JSON, 13 lulus, 0 gagal, 27 assertion.
 - P12: 1 bukti JSON performa (`E-P12-PERF.json`).
 - Operasional: rollback dan konversi data masing-masing punya log tersendiri.
-- Tanda tangan: daftar hadir, peer review, readiness, dan persetujuan masih menyusul.
+- Tanda tangan: item 1 lengkap; item 2–3 tersisa Dafit; item 4–5 tersisa dosen.

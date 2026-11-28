@@ -7,14 +7,13 @@ bagian 5 dan 6):
   lima syarat terpenuhi.
 - Strategi peralihan: **pilot + mini paralel**.
 
-Status: **selesai secara substantif — status, nama, dan tanggal terisi; tanda tangan menyusul**.
+Status: **selesai secara substantif — status, nama, dan tanggal terisi; TTD Kelvin terpasang, TTD dosen menyusul**.
 
 | Penyetuju | Status persetujuan | Catatan | Nama | Tanda tangan | Tanggal |
 |---|---|---|---|---|---|
-| Pemilik aplikasi | Disetujui |  | Kelvin Septio (pemilik aplikasi, simulasi) |  | 28 November 2026 |
-| Dosen pembimbing | Disetujui |  | Fatima Felawati, M.Kom (sesuai PDF tugas) |  | 28 November 2026 |
+| Pemilik aplikasi | Disetujui |  | Kelvin Septio (pemilik aplikasi, simulasi) | `03-evidence/tanda-tangan-uat-kelvin.jpeg` | 28 November 2026 |
+| Dosen pembimbing | Disetujui |  | Fatima Felawati, M.Kom (sesuai PDF tugas) | menyusul | 28 November 2026 |
 
-Isi kolom **Status persetujuan** dengan salah satu: Disetujui / Disetujui dengan
-Status persetujuan, nama, dan tanggal sudah diisi sesuai arahan. Kolom tanda
-tangan sengaja kosong sampai benar-benar ditandatangani oleh orang yang
-bersangkutan; status ini tidak mengklaim tanda tangan sudah ada.
+Status persetujuan, nama, dan tanggal sudah diisi sesuai arahan. Tanda tangan
+Kelvin terpasang; tanda tangan dosen pembimbing masih menyusul. Status ini tidak
+mengklaim dosen sudah menandatangani.
