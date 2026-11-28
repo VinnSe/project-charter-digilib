@@ -9,7 +9,7 @@ Diperbarui: 28 Nov 2026.
 - 5 modul: autentikasi/role, katalog buku & kategori, peminjaman, keranjang, laporan
 - Objek sudah disetujui dosen
 - Tag: `v1-baseline` = `6e30775`, `v2-fixes` = `7819145` (sudah di-push)
-- HEAD kerja: `f1796ec`; remote `main` sudah sinkron; tag sudah di-push
+- HEAD kerja: `39b82ce`; remote `main` sudah sinkron; tag sudah di-push
 - Worktree regression: `D:/digilib-pjbl-v1` (`6e30775`) dan `D:/digilib-pjbl-v2` (`7819145`)
 
 ## Keputusan kelompok
