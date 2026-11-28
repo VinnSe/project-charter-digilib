@@ -3,15 +3,15 @@
 Materi sesuai rencana P11 bagian 7: login, meminjam buku, melihat laporan, dan
 penanganan transaksi gagal. Durasi rencana: 60 menit.
 
-Status: **template kosong — belum diisi**.
+Status: **metadata dan peserta sudah terisi; tanda tangan peserta masih tertunda**.
 
 | Keterangan | Isi |
 |---|---|
-| Tanggal pelatihan | 28 oktober 2026 |
+| Tanggal pelatihan | 28 November 2026 |
 | Jam / durasi | 13.00 durasi 4 jam |
 | Tempat / platform | kediaman rumah ade |
 | Narasumber | kelvin |
-| Materi yang disampaikan |  |
+| Materi yang disampaikan | Login dan pembagian peran (admin/anggota); alur peminjaman v2 (`/borrow` → pilih buku → `/cart` → Simpan → `/report`); melihat dan memverifikasi laporan transaksi; penanganan transaksi gagal (stok habis, akses 403, transaksi belum selesai); tata cara melaporkan kendala kepada admin. |
 
 | No | Nama peserta | Peran (admin / anggota) | Tanda tangan |
 |---|---|---|---|
