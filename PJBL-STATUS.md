@@ -97,7 +97,7 @@ item 2 pelatihan selesai secara substantif dengan tanda tangan peserta menyusul.
 | Daftar hadir pelatihan admin/anggota — **SELESAI (substansi)** | Sebelum P14 | `daftar-hadir-pelatihan.md` berisi 5 peserta, materi, dan metadata; tanda tangan menyusul sebelum submission akhir |
 | Tanda tangan form peer review — **SELESAI (substansi)** | Sebelum P14 | kelima reviewer menyatakan `Setuju`, nama dan tanggal 28 November 2026 terisi di `peer-review-form.md`; tanda tangan menyusul |
 | Persetujuan keputusan di `05-laporan/persetujuan-keputusan.md` | Sebelum P14 | keputusan usulan belum disetujui pemilik/dosen |
-| Tanda tangan readiness report (`implementation-readiness-report.md` bagian 10) | Sebelum P14 | kolom sengaja kosong sampai diisi orangnya |
+| Tanda tangan readiness report — **SELESAI (substansi)** | Sebelum P14 | bagian 10 berisi 3 peran, nama, dan tanggal 28 November 2026; tanda tangan menyusul |
 
 Peer assessment dan refleksi individu tetap menjadi luaran P15, bukan bagian
 dari lima item sebelum P14.

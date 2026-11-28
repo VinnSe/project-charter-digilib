@@ -108,16 +108,16 @@ Conditional Go.
 
 | ID | Risiko | Dampak | Mitigasi |
 |---|---|---|---|
-| R-1 | Tiga Major masih terbuka di v1 | Sedang | dibuktikan tertutup di v2 pada P13 |
+| R-1 | Tiga Major di v1 | Sedang | sudah dibuktikan tertutup di `v2-fixes` pada P13 |
 | R-2 | Rollback belum diuji | Sedang | uji sebelum rilis terbatas |
-| R-3 | UAT dan pelatihan belum dilakukan | Sedang | ditandatangani/dilaksanakan sebelum go-live |
+| R-3 | UAT dan pelatihan | Sedang | UAT diterima 5 dari 5; pelatihan tercatat dengan 5 peserta, tanda tangan menyusul |
 
 ## 10. Persetujuan
 
 | Peran | Nama | Tanda tangan | Tanggal |
 |---|---|---|---|
-| Pemilik aplikasi |  |  |  |
-| Ketua tim QA |  |  |  |
-| Dosen pembimbing |  |  |  |
+| Pemilik aplikasi | Kelvin Septio (pemilik aplikasi, simulasi) |  | 28 November 2026 |
+| Ketua tim QA | Kelvin Septio (Test Lead / koordinator) |  | 28 November 2026 |
+| Dosen pembimbing | Fatima Felawati, M.Kom (sesuai PDF tugas) |  | 28 November 2026 |
 
-Kolom sengaja dikosongkan sampai benar-benar ditandatangani.
+Nama dan tanggal sudah diisi. Kolom tanda tangan sengaja kosong sampai benar-benar ditandatangani oleh orang yang bersangkutan.
