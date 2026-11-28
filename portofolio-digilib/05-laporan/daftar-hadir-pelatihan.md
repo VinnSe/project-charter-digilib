@@ -7,11 +7,11 @@ Status: **template kosong — belum diisi**.
 
 | Keterangan | Isi |
 |---|---|
-| Tanggal pelatihan | .................................................. |
-| Jam / durasi | .................................................. |
-| Tempat / platform | .................................................. |
-| Narasumber | .................................................. |
-| Materi yang disampaikan | .................................................. |
+| Tanggal pelatihan | 28 oktober 2026 |
+| Jam / durasi | 13.00 durasi 4 jam |
+| Tempat / platform | kediaman rumah ade |
+| Narasumber | kelvin |
+| Materi yang disampaikan |  |
 
 | No | Nama peserta | Peran (admin / anggota) | Tanda tangan |
 |---|---|---|---|
@@ -20,14 +20,11 @@ Status: **template kosong — belum diisi**.
 | 3 |  |  |  |
 | 4 |  |  |  |
 | 5 |  |  |  |
-| 6 |  |  |  |
-| 7 |  |  |  |
-| 8 |  |  |  |
-| 9 |  |  |  |
-| 10 |  |  |  |
 
 Jumlah hadir: ........ orang (admin: ........, anggota: ........).
 
-Catatan: isi hanya untuk orang yang benar-benar mengikuti pelatihan. Tanda
-tangan harus milik peserta yang bersangkutan. Kalau pelatihan belum dilaksanakan,
-biarkan template ini kosong dan jangan mengklaim selesai di P14.
+Catatan: template ini disiapkan untuk 5 peserta sesuai jumlah anggota kelompok.
+Peran dalam simulasi boleh dibagi, misalnya 1 admin dan 4 anggota. Isi hanya
+untuk orang yang benar-benar mengikuti sesi pelatihan. Tanda tangan harus milik
+peserta yang bersangkutan. Kalau pelatihan belum dilaksanakan, biarkan kosong
+dan jangan mengklaim selesai di P14.
