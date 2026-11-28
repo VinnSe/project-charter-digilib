@@ -1,8 +1,8 @@
 # Form Peer Review — P9
 
-Diisi oleh anggota kelompok sendiri (sesuai arahan dosen). Status: **draf berbasis bukti eksekusi, belum ditandatangani anggota**.
+Diisi oleh anggota kelompok sendiri (sesuai arahan dosen). Status: **konfirmasi kelima reviewer sudah "Setuju"; nama, tanda tangan, dan tanggal menyusul**.
 
-Catatan: draf ini disusun dari hasil P9 yang benar-benar dijalankan (`E-P9-PHPUnit.log` dan file `E-*.json`). Kolom "Pengreview yang disarankan" adalah usulan pembagian, bukan tanda tangan. Form ini belum sah sebagai peer review sampai anggota yang bersangkutan mengonfirmasi isinya dan menandatanganinya.
+Catatan: draf ini disusun dari hasil P9 yang benar-benar dijalankan (`E-P9-PHPUnit.log` dan file `E-*.json`). Kolom "Pengreview yang disarankan" adalah usulan pembagian, bukan tanda tangan. Konfirmasi isi sudah diterima dari kelima reviewer; form menjadi sah sebagai peer review setelah nama, tanda tangan, dan tanggal diisi oleh masing-masing anggota.
 
 | Aspek | Pengreview yang disarankan | Hal yang sudah baik | Hal yang perlu diperbaiki | Saran konkret |
 |---|---|---|---|---|
@@ -21,11 +21,11 @@ Kolom Nama, Tanda tangan, dan Tanggal diisi oleh masing-masing anggota.
 
 | No | Pengreview | Status konfirmasi | Nama | Tanda tangan | Tanggal |
 |---|---|---|---|---|---|
-| 1 | Kelvin Septio |  |  |  |  |
-| 2 | Fathan Al Mu'thi Arsyad |  |  |  |  |
-| 3 | M. Dafit Irwansyah |  |  |  |  |
-| 4 | Ade Henry Febrian |  |  |  |  |
-| 5 | M. Aovar Ahdan |  |  |  |  |
+| 1 | Kelvin Septio | Setuju |  |  |  |
+| 2 | Fathan Al Mu'thi Arsyad | Setuju |  |  |  |
+| 3 | M. Dafit Irwansyah | Setuju |  |  |  |
+| 4 | Ade Henry Febrian | Setuju |  |  |  |
+| 5 | M. Aovar Ahdan | Setuju |  |  |  |
 
 Catatan tambahan / koreksi: ................................................
 
