@@ -10,7 +10,7 @@ Status per 27 November 2026.
 | 3 | Defect Critical terbuka = 0 | `04-defect-log/defect-log.md` | Selesai |
 | 4 | Defect Major terbuka ≤ 2 dengan workaround | 0 Major — DEF-01…03 Closed di `v2-fixes` (`04-defect-log/defect-log.md`, P13) | Selesai |
 | 5 | Pass rate ≥ 95% | 100% (13 dari 13) di `v2-fixes` (`E-P13-v2-PHPUnit.log`) | Selesai |
-| 6 | UAT disetujui pemilik aplikasi | form kosong belum ditandatangani (`02-test-case/uat-form.md`) | Belum |
+| 6 | UAT disetujui pemilik aplikasi | hasil 5 dari 5 terisi di `02-test-case/uat-form.md`; Penutup/tanda tangan masih menunggu pemilik aplikasi | Belum |
 | 7 | Backup database dan uji restore | belum dijalankan | Belum |
 | 8 | Rencana rollback diuji | belum dijalankan | Belum |
 | 9 | Konversi data master terverifikasi | belum ada verifikasi | Belum |
