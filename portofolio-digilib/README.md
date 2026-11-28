@@ -13,7 +13,7 @@ Versi kelompok: https://github.com/VinnSe/project-charter-digilib
 | `v1-baseline` | `6e30775` | kondisi sebelum perbaikan role |
 | `v2-fixes` | `7819145` | kondisi setelah perbaikan role |
 
-Kedua tag saat ini hanya ada di lokal (belum di-push ke GitHub).
+Kedua tag sudah di-push ke GitHub bersama branch `main`.
 
 ## Objek dan alur utama
 

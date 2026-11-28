@@ -84,4 +84,4 @@ Setelah kelima item selesai, beri tahu agent. Agent lalu memperbarui go-live
 checklist, dashboard, dan menulis P14 dengan status final.
 
 Hal yang masih bisa dikerjakan agent sambil menunggu: uji rollback dan konversi
-laporan ke PDF. Push ke GitHub tetap menunggu izin.
+laporan ke PDF. Push ke GitHub sudah dilakukan.

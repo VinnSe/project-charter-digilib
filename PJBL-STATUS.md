@@ -8,8 +8,8 @@ Diperbarui: 28 Nov 2026.
 - Alur utama: `login → /borrow → pilih buku → /cart → /add-borrow → /report`
 - 5 modul: autentikasi/role, katalog buku & kategori, peminjaman, keranjang, laporan
 - Objek sudah disetujui dosen
-- Tag lokal: `v1-baseline` = `6e30775`, `v2-fixes` = `7819145` (belum di-push)
-- HEAD kerja: `acbc83e` (TTD Dafit terpasang; tersisa dosen); remote masih `7819145`, belum ada push artefak PJBL
+- Tag: `v1-baseline` = `6e30775`, `v2-fixes` = `7819145` (sudah di-push)
+- HEAD kerja: `e6ec313`; remote `main` sudah sinkron di `e6ec313`; tag sudah di-push
 - Worktree regression: `D:/digilib-pjbl-v1` (`6e30775`) dan `D:/digilib-pjbl-v2` (`7819145`)
 
 ## Keputusan kelompok
@@ -120,8 +120,8 @@ terhitung dua kali.
 
 Objek DIGILIB sudah disetujui dosen; pembagian peran dan format `Co-authored-by` sudah diputuskan, jadi tidak perlu diulang.
 
-Yang masih bisa dikerjakan agent: konversi laporan ke PDF dan push commit
-(dengan izin). Uji rollback dan verifikasi konversi data sudah selesai.
+Yang masih bisa dikerjakan agent: konversi laporan ke PDF. Push sudah selesai.
+Uji rollback dan verifikasi konversi data sudah selesai.
 
 ## Rencana sesi berikutnya
 
