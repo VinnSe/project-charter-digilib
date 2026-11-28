@@ -125,9 +125,9 @@ Yang masih bisa dikerjakan agent: konversi laporan ke PDF dan push commit
 
 ## Rencana sesi berikutnya
 
-1. P14 — pola sama seperti P9–P13: saya jelaskan dulu, user konfirmasi paham, lalu saya kerjakan
+1. P14 — selesai; laporan akhir + evidence index sudah dibuat
 2. P15 — pola sama: jelaskan → konfirmasi → kerjakan
-3. Setelah itu lanjut ke 9 item Human
+3. Lampirkan tanda tangan item 2–5 sebelum submission akhir
 
 Pengingat penting: 5 dari 9 item (UAT, daftar hadir, tanda tangan peer review,
 tanda tangan readiness report, persetujuan keputusan/strategi) sebaiknya beres
@@ -135,9 +135,13 @@ tanda tangan readiness report, persetujuan keputusan/strategi) sebaiknya beres
 
 ## Berikutnya
 
-P14 — Laporan akhir terintegrasi: gabungkan bukti P9–P13, quality checklist,
-keputusan readiness, dashboard, dan regresi menjadi satu laporan + evidence index.
-Laporan P14 masih berstatus awal sampai tanda tangan dan item Human dilengkapi.
+P14 — **SELESAI**. Laporan akhir terintegrasi ada di
+`05-laporan/laporan-akhir.md` dan evidence index di
+`05-laporan/evidence-index.md`. Isi 7 bagian sesuai PDF: ringkasan eksekutif,
+test summary, implementation, quality evaluation, rekomendasi, lessons learned
+(Start–Stop–Continue), dan lampiran. Angka diambil dari bukti yang terindeks,
+bukan dari ingatan. Tanda tangan item 2–5 masih menyusul dan tidak diklaim
+sudah ada.
 
 ## Perintah berguna
 

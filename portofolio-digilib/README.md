@@ -53,6 +53,10 @@ untuk menelusuri kontribusi tiap anggota.
    tabel metadata di folder yang sama.
 7. Ringkasan perbandingan ada di `05-laporan/regression-test-report.md` dan
    `06-metrik/perbandingan-v1-v2.md`.
+8. Bukti operasional ada di `03-evidence/rollback-test.log` dan
+   `03-evidence/data-conversion-verification.log`.
+9. Laporan akhir dan indeksnya ada di `05-laporan/laporan-akhir.md` dan
+   `05-laporan/evidence-index.md`.
 
 ## Struktur folder
 
