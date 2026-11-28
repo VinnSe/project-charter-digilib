@@ -82,9 +82,9 @@ pendamping diambil dari metadata file. Kolom Pemilik mengikuti field
 | —        | Laporan Word        | `05-laporan/laporan-akhir.docx`                  | 2026-11-28 | Kelompok 4     | versi Word editable dari laporan yang sama                      |
 | —        | Indeks bukti        | `05-laporan/evidence-index.md`                   | 2026-11-28 | Kelompok 4     | luaran final P14                                                |
 | —        | Indeks bukti Word   | `05-laporan/evidence-index.docx`                 | 2026-11-28 | Kelompok 4     | versi Word editable dari indeks yang sama                       |
-| —        | Screenshot          | `03-evidence/P13-screenshots/E-RT-01A-v1.png` | 2026-11-28 | Verifikasi P13 | bukti visual sebelum/sesudah                                    |
-| —        | Screenshot          | `03-evidence/P13-screenshots/E-RT-01A-v2.png` | 2026-11-28 | Verifikasi P13 | bukti visual sebelum/sesudah                                    |
-| —        | Screenshot          | `03-evidence/P13-screenshots/E-RT-01B-v1.png` | 2026-11-28 | Verifikasi P13 | bukti visual sebelum/sesudah                                    |
+| —        | Screenshot          | `03-evidence/P13-screenshots/E-RT-01A-v1.png`    | 2026-11-28 | Verifikasi P13 | bukti visual sebelum/sesudah                                    |
+| —        | Screenshot          | `03-evidence/P13-screenshots/E-RT-01A-v2.png`    | 2026-11-28 | Verifikasi P13 | bukti visual sebelum/sesudah                                    |
+| —        | Screenshot          | `03-evidence/P13-screenshots/E-RT-01B-v1.png`    | 2026-11-28 | Verifikasi P13 | bukti visual sebelum/sesudah                                    |
 | —        | Screenshot          | `03-evidence/P13-screenshots/E-RT-01B-v2.png`    | 2026-11-28 | Verifikasi P13 | bukti visual sebelum/sesudah                                    |
 | —        | Screenshot          | `03-evidence/P13-screenshots/E-RT-02-v1.png`     | 2026-11-28 | Verifikasi P13 | bukti visual sebelum/sesudah                                    |
 | —        | Screenshot          | `03-evidence/P13-screenshots/E-RT-02-v2.png`     | 2026-11-28 | Verifikasi P13 | bukti visual sebelum/sesudah                                    |
