@@ -137,9 +137,9 @@ tanda tangan readiness report, persetujuan keputusan/strategi) sebaiknya beres
 
 P14 — **SELESAI**. Laporan akhir terintegrasi ada di
 `05-laporan/laporan-akhir.md` dan evidence index di
-`05-laporan/evidence-index.md`. Versi Word editable ada di
-`05-laporan/laporan-akhir.docx` (isi sama, tinggal disesuaikan ke format kampus).
-Isi 7 bagian sesuai PDF: ringkasan eksekutif,
+`05-laporan/evidence-index.md` (78 entri). Versi Word editable keduanya ada di
+`05-laporan/laporan-akhir.docx` dan `05-laporan/evidence-index.docx` (isi sama,
+tinggal disesuaikan ke format kampus). Isi 7 bagian sesuai PDF: ringkasan eksekutif,
 test summary, implementation, quality evaluation, rekomendasi, lessons learned
 (Start–Stop–Continue), dan lampiran. Angka diambil dari bukti yang terindeks,
 bukan dari ingatan. Tanda tangan item 2–5 masih menyusul dan tidak diklaim

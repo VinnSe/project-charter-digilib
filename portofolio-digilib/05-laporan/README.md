@@ -13,3 +13,4 @@ Berisi laporan terintegrasi, evidence index, dan dokumen kesiapan implementasi. 
 | `laporan-akhir.md` | laporan akhir terintegrasi P14 (7 bagian) |
 | `laporan-akhir.docx` | versi Word editable dari laporan yang sama |
 | `evidence-index.md` | indeks seluruh bukti untuk P14 |
+| `evidence-index.docx` | versi Word editable dari indeks yang sama |

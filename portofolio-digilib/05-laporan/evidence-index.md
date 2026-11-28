@@ -3,7 +3,7 @@
 Tanggal penyusunan: 28 November 2026. Sumber angka dan status diambil dari
 file bukti yang tercantum di bawah, bukan dari ingatan.
 
-Jumlah entri: 76.
+Jumlah entri: 78.
 
 Tanggal pada baris JSON diambil dari field `waktu`; tanggal pada dokumen
 pendamping diambil dari metadata file. Kolom Pemilik mengikuti field
@@ -74,8 +74,10 @@ pendamping diambil dari metadata file. Kolom Pemilik mengikuti field
 | — | Log operasional | `03-evidence/data-conversion-verification.log` | 2026-11-28 | Aovar | 4 akun, 5 kategori, 6 buku, 0 duplikat |
 | — | Laporan operasional | `05-laporan/rollback-test-report.md` | 2026-11-28 | Aovar | ringkasan uji rollback |
 | — | Checklist | `05-laporan/go-live-checklist.md` | 2026-11-28 | Kelompok 4 | 10 dari 10 selesai |
-| — | Laporan akhir | `05-laporan/laporan-akhir.md` | — | Kelompok 4 | luaran final P14 |
-| — | Indeks bukti | `05-laporan/evidence-index.md` | — | Kelompok 4 | luaran final P14 |
+| — | Laporan | `05-laporan/laporan-akhir.md` | 2026-11-28 | Kelompok 4 | luaran final P14 |
+| — | Laporan Word | `05-laporan/laporan-akhir.docx` | 2026-11-28 | Kelompok 4 | versi Word editable dari laporan yang sama |
+| — | Indeks bukti | `05-laporan/evidence-index.md` | 2026-11-28 | Kelompok 4 | luaran final P14 |
+| — | Indeks bukti Word | `05-laporan/evidence-index.docx` | 2026-11-28 | Kelompok 4 | versi Word editable dari indeks yang sama |
 | — | Screenshot | `03-evidence/P13-screenshots/E-RT-01A-v1.png` | 2026-11-28 | Verifikasi P13 | bukti visual sebelum/sesudah |
 | — | Screenshot | `03-evidence/P13-screenshots/E-RT-01A-v2.png` | 2026-11-28 | Verifikasi P13 | bukti visual sebelum/sesudah |
 | — | Screenshot | `03-evidence/P13-screenshots/E-RT-01B-v1.png` | 2026-11-28 | Verifikasi P13 | bukti visual sebelum/sesudah |
