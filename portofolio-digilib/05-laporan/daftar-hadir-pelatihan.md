@@ -15,13 +15,13 @@ Status: **template kosong — belum diisi**.
 
 | No | Nama peserta | Peran (admin / anggota) | Tanda tangan |
 |---|---|---|---|
-| 1 |  |  |  |
-| 2 |  |  |  |
-| 3 |  |  |  |
-| 4 |  |  |  |
-| 5 |  |  |  |
+| 1 | Ade Henry Febrian | admin |  |
+| 2 | Kelvin Septio | anggota |  |
+| 3 | M. Dafit Irwansyah | anggota |  |
+| 4 | Fathan Al Mu'thi Arsyad | anggota |  |
+| 5 | M. Aovar Ahdan | anggota |  |
 
-Jumlah hadir: ........ orang (admin: ........, anggota: ........).
+Jumlah hadir: 5 orang (admin: 1, anggota: 4).
 
 Catatan: template ini disiapkan untuk 5 peserta sesuai jumlah anggota kelompok.
 Peran dalam simulasi boleh dibagi, misalnya 1 admin dan 4 anggota. Isi hanya
