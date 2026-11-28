@@ -2,7 +2,7 @@
 
 Build yang diuji: `v2-fixes` (`7819145`)
 Tujuan: konfirmasi dari pemilik aplikasi bahwa alur utama dapat diterima.
-Status: **hasil eksekusi lengkap; Penutup sudah diisi tetapi perlu dikonfirmasi — identitas penandatangan dan tanda tangan asli masih harus diperbaiki**.
+Status: **hasil eksekusi lengkap; Penutup sudah dirapikan — tanda tangan asli pemilik aplikasi masih tertunda**.
 
 Petunjuk: isi kolom **Hasil** dengan `Ya` atau `Tidak`. Kolom **Catatan** boleh
 dikosongkan kalau tidak ada kendala. Minimal 4 dari 5 skenario berhasil agar
@@ -21,11 +21,11 @@ Ringkasan UAT: 5 dari 5 skenario berhasil.
 
 ## Penutup
 
-Nama pemilik aplikasi: Kelompok 4 
-Tanda tangan: Kelvin Septio (selaku ketua kelompok)
+Nama pemilik aplikasi: Kelvin Septio (pemilik aplikasi, simulasi)
+Tanda tangan: [tanda tangan asli Kelvin Septio]
 Tanggal: 28 November 2026
 Keputusan UAT: Diterima
 
-Catatan: Nama dan tanda tangan harus milik orang yang bertindak sebagai pemilik
-aplikasi. "Kelompok 4" bukan nama orang, dan nama yang diketik bukan tanda
-tangan. Perbaiki kedua baris itu sebelum item 1 ditandai selesai.
+Catatan: Nama pemilik aplikasi sudah menggunakan peran simulasi. Tanda tangan
+masih berupa placeholder — ganti `[tanda tangan asli Kelvin Septio]` dengan
+tanda tangan sungguhan (scan atau e-signature) sebelum item 1 ditandai selesai.
