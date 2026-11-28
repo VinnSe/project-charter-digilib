@@ -21,6 +21,7 @@ bukti adalah `v1-baseline` dengan commit `6e30775`.
 | `P13-v1/` | 13 bukti JSON + `E-P13-v1-PHPUnit.log`, label `v1-baseline` / `6e30775` |
 | `P13-v2/` | 13 bukti JSON + `E-P13-v2-PHPUnit.log`, label `v2-fixes` / `7819145` |
 | `rantai-bukti-p13.md` | requirement → test → run → defect → commit → retest |
+| `P13-screenshots/` | 8 screenshot sebelum/sesudah untuk DEF-01…03 + README metadata |
 | `../05-laporan/regression-test-report.md` | analisis dampak, suite, hasil, dan audit bukti |
 | `../06-metrik/perbandingan-v1-v2.md` | tabel metrik sebelum/sesudah |
 

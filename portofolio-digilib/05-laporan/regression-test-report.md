@@ -169,7 +169,7 @@ Kriteria yang dipakai: 0 defect Major terbuka, pass rate minimal 95%, dan
 | Tidak ada regresi | 8 bukti P13-v2 untuk test yang dulu lulus | Sesuai — kedelapan status `lulus` |
 | Perbandingan adil | label build, commit, checksum test, environment | Sesuai — berasal dari shell dan file identik |
 | Log mentah tersimpan | `E-P13-v1-PHPUnit.log`, `E-P13-v2-PHPUnit.log` | Sesuai — 13 test dan 27 assertion tercatat |
-| Screenshot visual sebelum/sesudah | tidak dibuat | Belum tersedia — eksekusi memakai sqlite in-memory; bukti yang diaudit adalah log dan JSON |
+| Screenshot visual sebelum/sesudah | 8 file di `03-evidence/P13-screenshots/` | Sesuai — pasangan v1/v2 untuk DEF-01, DEF-02, dan DEF-03 diambil dari aplikasi yang berjalan; rincian di `P13-screenshots/README.md` |
 | Kinerja produksi | tidak tersedia | Tidak diklaim — semua angka lokal |
 
 ## 9. Kesimpulan dan kaitan dengan P14

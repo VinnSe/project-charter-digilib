@@ -55,3 +55,18 @@ Delapan test yang lulus di v1 (`INT-01`, `INT-02`, `INT-03`, `SYS-01`,
 `SYS-04`, `SYS-05`, `AC-01`, `AC-02`) tetap lulus di v2. Bukti:
 `03-evidence/P13-v1/E-<ID>.json` dan `03-evidence/P13-v2/E-<ID>.json`.
 Tidak ada test yang berubah dari lulus menjadi gagal.
+
+## Screenshot visual pendamping
+
+Delapan screenshot sebelum/sesudah ada di `03-evidence/P13-screenshots/`.
+Rincian file, build, URL, dan akun ada di `P13-screenshots/README.md`.
+
+| Defect | Sebelum (v1) | Sesudah (v2) |
+|---|---|---|
+| DEF-01 / SYS-02 | `E-RT-01A-v1.png` — admin lolos ke `/cart` | `E-RT-01A-v2.png` — `/borrow` ditolak 403 |
+| DEF-01 / SYS-03 + AC-03 | `E-RT-01B-v1.png` — form Tambah Buku terbuka | `E-RT-01B-v2.png` — `/add-book` ditolak 403 |
+| DEF-02 / INT-04 | `E-RT-02-v1.png` — BK-001 stok habis tetap di keranjang | `E-RT-02-v2.png` — stok tersedia 0, tombol Ambil disabled |
+| DEF-03 / INT-05 | `E-RT-03-v1.png` — status "Dipinjam", tombol Detail ada | `E-RT-03-v2.png` — status ber-centang, tombol Detail hilang |
+
+Catatan alur: v1 memakai Kode Anggota (`agt-1-rpl1-2005`), sedangkan v2 sudah
+menghapus field tersebut dan memakai akun login (`Auth::id()` / `user_id`).

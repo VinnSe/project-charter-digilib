@@ -49,7 +49,9 @@ untuk menelusuri kontribusi tiap anggota.
    `03-evidence/P13-v2/E-P13-v2-PHPUnit.log`.
 4. Kegagalan dan status tertutup ada di `04-defect-log/defect-log.md`.
 5. Rantai bukti perbaikan ada di `03-evidence/rantai-bukti-p13.md`.
-6. Ringkasan perbandingan ada di `05-laporan/regression-test-report.md` dan
+6. Screenshot sebelum/sesudah ada di `03-evidence/P13-screenshots/` beserta
+   tabel metadata di folder yang sama.
+7. Ringkasan perbandingan ada di `05-laporan/regression-test-report.md` dan
    `06-metrik/perbandingan-v1-v2.md`.
 
 ## Struktur folder

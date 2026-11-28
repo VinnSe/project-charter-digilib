@@ -74,9 +74,11 @@ File:
 - `04-defect-log/defect-log.md` — status DEF-01…03 berubah menjadi Closed
 
 DEF-01, DEF-02, DEF-03 dinyatakan Closed. Dua syarat Conditional Go (defect
-tertutup dan pass rate minimal 95%) sudah terpenuhi. Screenshot visual belum
-dibuat karena eksekusi memakai sqlite in-memory; bukti yang diaudit adalah log,
-JSON, dan rantai bukti.
+tertutup dan pass rate minimal 95%) sudah terpenuhi. Screenshot visual sudah
+lengkap: 8 file di `03-evidence/P13-screenshots/` beserta README metadata.
+Screenshot diambil dari aplikasi yang berjalan pada dua versi, bukan dari
+PHPUnit in-memory. Catatan alur: v1 memakai Kode Anggota, v2 sudah menghapusnya
+dan memakai akun login (`Auth::id()` / `user_id`).
 
 ## Yang masih harus diselesaikan kelompok sendiri
 
