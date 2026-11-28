@@ -3,11 +3,11 @@
 Build yang diuji: `v1-baseline` (`6e30775`).
 Verifikasi perbaikan: `v2-fixes` (`7819145`) pada P13.
 
-| ID | Ringkasan | Severity | Status di v1 | Status di v2 | Bukti v1 | Bukti v2 |
-|---|---|---|---|---|---|---|
-| DEF-01 | Tidak ada pembatasan akses berdasarkan role | Major | Open | Closed | `E-SYS-02.json`, `E-SYS-03.json`, `E-AC-03.json`, `P13-v1/` | `P13-v2/E-SYS-02.json`, `E-SYS-03.json`, `E-AC-03.json` |
-| DEF-02 | Buku dengan stok habis tetap bisa ditambahkan ke keranjang | Major | Open | Closed | `E-INT-04.json`, `P13-v1/E-INT-04.json` | `P13-v2/E-INT-04.json` |
-| DEF-03 | Selesai peminjaman tidak mengubah status dan tidak menghapus session | Major | Open | Closed | `E-INT-05.json`, `P13-v1/E-INT-05.json` | `P13-v2/E-INT-05.json` |
+| ID     | Ringkasan                                                            | Severity | Status di v1 | Status di v2 | Bukti v1                                                    | Bukti v2                                                |
+|--------|----------------------------------------------------------------------|----------|--------------|--------------|-------------------------------------------------------------|---------------------------------------------------------|
+| DEF-01 | Tidak ada pembatasan akses berdasarkan role                          | Major    | Open         | Closed       | `E-SYS-02.json`, `E-SYS-03.json`, `E-AC-03.json`, `P13-v1/` | `P13-v2/E-SYS-02.json`, `E-SYS-03.json`, `E-AC-03.json` |
+| DEF-02 | Buku dengan stok habis tetap bisa ditambahkan ke keranjang           | Major    | Open         | Closed       | `E-INT-04.json`, `P13-v1/E-INT-04.json`                     | `P13-v2/E-INT-04.json`                                  |
+| DEF-03 | Selesai peminjaman tidak mengubah status dan tidak menghapus session | Major    | Open         | Closed       | `E-INT-05.json`, `P13-v1/E-INT-05.json`                     | `P13-v2/E-INT-05.json`                                  |
 
 ## DEF-01 — Pembatasan role belum ada
 

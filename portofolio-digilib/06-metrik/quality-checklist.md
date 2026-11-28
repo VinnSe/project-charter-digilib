@@ -10,14 +10,14 @@ DIGILIB menyimpan data peminjaman dan membedakan akses admin/anggota. Karena itu
 
 ## Pemetaan karakteristik → indikator → target
 
-| Karakteristik | Subkarakteristik | Indikator | Target SMART | Metode uji | Hasil dari P9 | Status | Bukti |
-|---|---|---|---|---|---|---|---|
-| Functional suitability | Functional correctness | Test integrasi alur peminjaman lulus | 100% (5 dari 5 INT) pada rilis v1, sebelum 30 Nov 2026 | PHPUnit feature test | 3 dari 5 lulus | Tidak memenuhi | E-INT-01…05 |
-| Security | Confidentiality | Akses lintas role berhasil | 0 akses berhasil pada rilis v1 | Security test (HTTP status) | 3 pelanggaran | Tidak memenuhi | E-SYS-02, E-SYS-03, E-AC-03 |
-| Performance efficiency | Time behaviour | Waktu respons rata-rata `/book` | Maks. 2 detik, 10 request berurutan, lingkungan lokal, sebelum 30 Nov 2026 | Uji lokal | 0,0062 detik | Memenuhi | E-SYS-04 |
-| Usability | Operability | Elemen halaman keranjang tersedia | Minimal 4 dari 5 elemen pada rilis v1 | Pemeriksaan DOM | 5 dari 5 | Memenuhi | E-SYS-05 |
-| Reliability | Fault tolerance | Transaksi selesai konsisten | Status menjadi 1 dan session dihapus, 0 kegagalan | System/integration test | INT-05 gagal | Tidak memenuhi | E-INT-05 |
-| Effectiveness (quality in use) | — | Anggota menyelesaikan peminjaman tanpa bantuan | Minimal 4 dari 5 penguji | UAT | 5 dari 5 diterima | Memenuhi | `02-test-case/uat-form.md` |
+| Karakteristik                  | Subkarakteristik       | Indikator                                      | Target SMART                                                               | Metode uji                  | Hasil dari P9     | Status         | Bukti                       |
+|--------------------------------|------------------------|------------------------------------------------|----------------------------------------------------------------------------|-----------------------------|-------------------|----------------|-----------------------------|
+| Functional suitability         | Functional correctness | Test integrasi alur peminjaman lulus           | 100% (5 dari 5 INT) pada rilis v1, sebelum 30 Nov 2026                     | PHPUnit feature test        | 3 dari 5 lulus    | Tidak memenuhi | E-INT-01…05                 |
+| Security                       | Confidentiality        | Akses lintas role berhasil                     | 0 akses berhasil pada rilis v1                                             | Security test (HTTP status) | 3 pelanggaran     | Tidak memenuhi | E-SYS-02, E-SYS-03, E-AC-03 |
+| Performance efficiency         | Time behaviour         | Waktu respons rata-rata `/book`                | Maks. 2 detik, 10 request berurutan, lingkungan lokal, sebelum 30 Nov 2026 | Uji lokal                   | 0,0062 detik      | Memenuhi       | E-SYS-04                    |
+| Usability                      | Operability            | Elemen halaman keranjang tersedia              | Minimal 4 dari 5 elemen pada rilis v1                                      | Pemeriksaan DOM             | 5 dari 5          | Memenuhi       | E-SYS-05                    |
+| Reliability                    | Fault tolerance        | Transaksi selesai konsisten                    | Status menjadi 1 dan session dihapus, 0 kegagalan                          | System/integration test     | INT-05 gagal      | Tidak memenuhi | E-INT-05                    |
+| Effectiveness (quality in use) | —                      | Anggota menyelesaikan peminjaman tanpa bantuan | Minimal 4 dari 5 penguji                                                   | UAT                         | 5 dari 5 diterima | Memenuhi       | `02-test-case/uat-form.md`  |
 
 Catatan performa: angka 0,0062 detik adalah hasil lingkungan lokal dengan sqlite in-memory. Ini bukan ukuran kinerja produksi dan tidak boleh diklaim sebagai kinerja produksi.
 
@@ -25,16 +25,16 @@ Catatan performa: angka 0,0062 detik adalah hasil lingkungan lokal dengan sqlite
 
 Isi jawaban diambil dari bukti P9, bukan dari perkiraan.
 
-| No | Pertanyaan checklist | Karakteristik | Jawaban | Bukti |
-|---|---|---|---|---|
-| 1 | Apakah alur peminjaman dasar terbentuk (borrow → cart)? | Functional completeness | Ya | E-INT-01, E-INT-02 |
-| 2 | Apakah seluruh test integrasi alur lulus? | Functional correctness | Tidak (3 dari 5) | E-INT-01…05 |
-| 3 | Apakah anggota tidak dapat membuka halaman admin? | Confidentiality | Tidak | E-SYS-03, E-AC-03 |
-| 4 | Apakah admin tidak dapat membuka halaman peminjaman? | Confidentiality | Tidak | E-SYS-02 |
-| 5 | Apakah waktu respons `/book` maksimal 2 detik? | Time behaviour | Ya (0,0062 detik) | E-SYS-04 |
-| 6 | Apakah elemen halaman keranjang lengkap? | Operability | Ya (5 dari 5) | E-SYS-05 |
-| 7 | Apakah transaksi selesai mengubah status dan membersihkan session? | Fault tolerance | Tidak | E-INT-05 |
-| 8 | Apakah anggota dapat meminjam tanpa bantuan? | Effectiveness | Belum terukur | form UAT draft |
+|No | Pertanyaan checklist                                               | Karakteristik           | Jawaban           | Bukti              |
+|---|--------------------------------------------------------------------|-------------------------|-------------------|--------------------|
+| 1 | Apakah alur peminjaman dasar terbentuk (borrow → cart)?            | Functional completeness | Ya                | E-INT-01, E-INT-02 |
+| 2 | Apakah seluruh test integrasi alur lulus?                          | Functional correctness  | Tidak (3 dari 5)  | E-INT-01…05        |
+| 3 | Apakah anggota tidak dapat membuka halaman admin?                  | Confidentiality         | Tidak             | E-SYS-03, E-AC-03  |
+| 4 | Apakah admin tidak dapat membuka halaman peminjaman?               | Confidentiality         | Tidak             | E-SYS-02           |
+| 5 | Apakah waktu respons `/book` maksimal 2 detik?                     | Time behaviour          | Ya (0,0062 detik) | E-SYS-04           |
+| 6 | Apakah elemen halaman keranjang lengkap?                           | Operability             | Ya (5 dari 5)     | E-SYS-05           |
+| 7 | Apakah transaksi selesai mengubah status dan membersihkan session? | Fault tolerance         | Tidak             | E-INT-05           |
+| 8 | Apakah anggota dapat meminjam tanpa bantuan?                       | Effectiveness           | Belum terukur     | form UAT draft     |
 
 ## Kesimpulan
 

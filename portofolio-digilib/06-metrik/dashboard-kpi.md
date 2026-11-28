@@ -7,18 +7,18 @@ profil performa `E-P12-PERF.json`, quality checklist P10, dan defect log.
 Status RAG: **Hijau** = target terpenuhi, **Kuning** = mendekati target atau
 belum terukur, **Merah** = target tidak terpenuhi.
 
-| No | Indikator | Target | Hasil | Status | ID bukti |
-|---|---|---|---|---|---|
-| 1 | Pass rate | ≥ 95% | 61,5% (8 dari 13) | Merah | E-P9-PHPUnit.log |
-| 2 | Defect Critical + Major terbuka | 0 / maks. 2 | 3 Major | Merah | DEF-01…03 |
-| 3 | DRE | ≥ 85% | 100% (provisional) | Kuning | 04-defect-log/defect-log.md |
-| 4 | Defect density | ≤ 4 per KLOC | 1,63 per KLOC | Hijau | 1838 baris `app/` v1 + 3 defect |
-| 5 | Requirement coverage | 100% alur utama | 100% | Hijau | test-plan.md, test-case.md |
-| 6 | Code coverage | ≥ 80% | tidak diukur | Kuning | Xdebug/PCOV absen |
-| 7 | Waktu respons rata-rata `/book` | ≤ 2 detik | 0,0130 detik | Hijau | E-P12-PERF.json |
-| 8 | Waktu respons p95 | ≤ 3 detik | 0,0116 detik | Hijau | E-P12-PERF.json |
-| 9 | Availability / indikator keandalan | ≥ 99% | belum terukur | Kuning | tidak ada data MTTF/MTTR |
-| 10 | Kepuasan UAT | ≥ 4 dari 5 | 5 dari 5 diterima | Hijau | `uat-form.md` (status terbaru; tabel ini snapshot P12) |
+| No | Indikator                          | Target          | Hasil              | Status | ID bukti                                               |
+|----|------------------------------------|-----------------|--------------------|--------|--------------------------------------------------------|
+| 1  | Pass rate                          | ≥ 95%           | 61,5% (8 dari 13)  | Merah  | E-P9-PHPUnit.log                                       |
+| 2  | Defect Critical + Major terbuka    | 0 / maks. 2     | 3 Major            | Merah  | DEF-01…03                                              |
+| 3  | DRE                                | ≥ 85%           | 100% (provisional) | Kuning | 04-defect-log/defect-log.md                            |
+| 4  | Defect density                     | ≤ 4 per KLOC    | 1,63 per KLOC      | Hijau  | 1838 baris `app/` v1 + 3 defect                        |
+| 5  | Requirement coverage               | 100% alur utama | 100%               | Hijau  | test-plan.md, test-case.md                             |
+| 6  | Code coverage                      | ≥ 80%           | tidak diukur       | Kuning | Xdebug/PCOV absen                                      |
+| 7  | Waktu respons rata-rata `/book`    | ≤ 2 detik       | 0,0130 detik       | Hijau  | E-P12-PERF.json                                        |
+| 8  | Waktu respons p95                  | ≤ 3 detik       | 0,0116 detik       | Hijau  | E-P12-PERF.json                                        |
+| 9  | Availability / indikator keandalan | ≥ 99%           | belum terukur      | Kuning | tidak ada data MTTF/MTTR                               |
+| 10 | Kepuasan UAT                       | ≥ 4 dari 5      | 5 dari 5 diterima  | Hijau  | `uat-form.md` (status terbaru; tabel ini snapshot P12) |
 
 Ringkasan: 5 Hijau, 2 Merah, 3 Kuning. Dua indikator Merah menjadi perhatian
 utama: pass rate dan defect terbuka. Kuning tersisa untuk DRE provisional,

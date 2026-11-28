@@ -11,14 +11,14 @@ URL dan build dapat diverifikasi. Database lokal terpisah: `digilib_v1` dan
 
 | File | Defect | Build | URL | Akun | ID bukti | Keterangan |
 |---|---|---|---|---|---|---|
-| `E-RT-01A-v1.png` | DEF-01 / SYS-02 | `v1-baseline` | `127.0.0.1:8001/cart` | `admin@gmail.com` | `E-SYS-02.json` | Admin berhasil membuka `/borrow` dan masuk ke `/cart`, invoice `28112026-admin-1`. |
-| `E-RT-01A-v2.png` | DEF-01 / SYS-02 | `v2-fixes` | `127.0.0.1:8002/borrow` | `admin@gmail.com` | `E-SYS-02.json` | Tab `Forbidden`, akses ditolak 403. |
-| `E-RT-01B-v1.png` | DEF-01 / SYS-03, AC-03 | `v1-baseline` | `127.0.0.1:8001/add-book` | `student@gmail.com` | `E-SYS-03.json`, `E-AC-03.json` | Form "Tambah Buku" terbuka untuk anggota. |
-| `E-RT-01B-v2.png` | DEF-01 / SYS-03, AC-03 | `v2-fixes` | `127.0.0.1:8002/add-book` | `student@gmail.com` | `E-SYS-03.json`, `E-AC-03.json` | Tab `Forbidden`, akses ditolak 403. |
-| `E-RT-02-v1.png` | DEF-02 / INT-04 | `v1-baseline` | `127.0.0.1:8001/cart` | `student@gmail.com` | `E-INT-04.json` | BK-001 dengan `stock=1, being_borrowed=1` tetap masuk keranjang; `being_borrowed` naik menjadi 2. |
-| `E-RT-02-v2.png` | DEF-02 / INT-04 | `v2-fixes` | `127.0.0.1:8002/cart?kode_buku=BK-001` | `student@gmail.com` | `E-INT-04.json` | Buku ditemukan, "Stok Tersedia" = 0, tombol "Ambil" disabled; buku tidak masuk keranjang. |
-| `E-RT-03-v1.png` | DEF-03 / INT-05 | `v1-baseline` | `127.0.0.1:8001/report` | `student@gmail.com` | `E-INT-05.json` | Setelah `/add-borrow`, baris transaksi masih berstatus "Dipinjam" dan tombol Detail masih ada; kolom `status` di DB tetap `0`. |
-| `E-RT-03-v2.png` | DEF-03 / INT-05 | `v2-fixes` | `127.0.0.1:8002/report` | `student@gmail.com` | `E-INT-05.json` | Baris transaksi ber-centang, tombol Detail hilang; kolom `status` di DB menjadi `1` dan session dihapus. |
+| `E-RT-01A-v1.png` | DEF-01 / SYS-02        | `v1-baseline` | `127.0.0.1:8001/cart`                  | `admin@gmail.com`   | `E-SYS-02.json`                 | Admin berhasil membuka `/borrow` dan masuk ke `/cart`, invoice `28112026-admin-1`.                                             |
+| `E-RT-01A-v2.png` | DEF-01 / SYS-02        | `v2-fixes`    | `127.0.0.1:8002/borrow`                | `admin@gmail.com`   | `E-SYS-02.json`                 | Tab `Forbidden`, akses ditolak 403.                                                                                            |
+| `E-RT-01B-v1.png` | DEF-01 / SYS-03, AC-03 | `v1-baseline` | `127.0.0.1:8001/add-book`              | `student@gmail.com` | `E-SYS-03.json`, `E-AC-03.json` | Form "Tambah Buku" terbuka untuk anggota.                                                                                      |
+| `E-RT-01B-v2.png` | DEF-01 / SYS-03, AC-03 | `v2-fixes`    | `127.0.0.1:8002/add-book`              | `student@gmail.com` | `E-SYS-03.json`, `E-AC-03.json` | Tab `Forbidden`, akses ditolak 403.                                                                                            |
+| `E-RT-02-v1.png`  | DEF-02 / INT-04        | `v1-baseline` | `127.0.0.1:8001/cart`                  | `student@gmail.com` | `E-INT-04.json`                 | BK-001 dengan `stock=1, being_borrowed=1` tetap masuk keranjang; `being_borrowed` naik menjadi 2.                              |
+| `E-RT-02-v2.png`  | DEF-02 / INT-04        | `v2-fixes`    | `127.0.0.1:8002/cart?kode_buku=BK-001` | `student@gmail.com` | `E-INT-04.json`                 | Buku ditemukan, "Stok Tersedia" = 0, tombol "Ambil" disabled; buku tidak masuk keranjang.                                      |
+| `E-RT-03-v1.png`  | DEF-03 / INT-05        | `v1-baseline` | `127.0.0.1:8001/report`                | `student@gmail.com` | `E-INT-05.json`                 | Setelah `/add-borrow`, baris transaksi masih berstatus "Dipinjam" dan tombol Detail masih ada; kolom `status` di DB tetap `0`. |
+| `E-RT-03-v2.png`  | DEF-03 / INT-05        | `v2-fixes`    | `127.0.0.1:8002/report`                | `student@gmail.com` | `E-INT-05.json`                 | Baris transaksi ber-centang, tombol Detail hilang; kolom `status` di DB menjadi `1` dan session dihapus.                       |
 
 ## Catatan alur v1 vs v2
 

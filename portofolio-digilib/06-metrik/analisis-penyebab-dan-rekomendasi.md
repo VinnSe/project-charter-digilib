@@ -4,11 +4,11 @@
 
 Dari 5 test yang gagal di v1:
 
-| Area | Test gagal | Jumlah | Persentase |
-|---|---|---|---|
-| Pembatasan akses / role | SYS-02, SYS-03, AC-03 | 3 | 60% |
-| Validasi stok keranjang | INT-04 | 1 | 20% |
-| Penyelesaian transaksi | INT-05 | 1 | 20% |
+| Area                    | Test gagal            | Jumlah | Persentase |
+|-------------------------|-----------------------|--------|------------|
+| Pembatasan akses / role | SYS-02, SYS-03, AC-03 | 3      | 60%        |
+| Validasi stok keranjang | INT-04                | 1      | 20%        |
+| Penyelesaian transaksi  | INT-05                | 1      | 20%        |
 
 Tiga dari lima kegagalan (60%) berasal dari satu area: pembatasan akses.
 Ini sesuai dengan DEF-01 dan menjadi prioritas utama perbaikan.
@@ -35,14 +35,14 @@ memasukkan uji akses ke dalam checklist rilis.
 
 ## Rekomendasi
 
-| ID | Rekomendasi | Dampak | Usaha | Pemilik | Target terukur | Tenggat |
-|---|---|---|---|---|---|---|
-| R-1 | Terapkan pembatasan role dan uji akses tiap rilis | Tinggi | Sedang | Dafit + Fathan | 0 pelanggaran akses di v2 | 30 Nov 2026 |
-| R-2 | Validasi stok sebelum `addCart` | Sedang | Rendah | Dafit | INT-04 lulus di v2 | 30 Nov 2026 |
-| R-3 | Set status peminjaman dan hapus session saat selesai | Tinggi | Rendah | Dafit | INT-05 lulus di v2 | 30 Nov 2026 |
-| R-4 | Uji rollback sebelum rilis terbatas | Tinggi | Sedang | Aovar | restore berhasil, ada log | 30 Nov 2026 |
-| R-5 | Isi UAT dan laksanakan pelatihan | Sedang | Sedang | Kelvin | 4 dari 5 penguji + daftar hadir | 30 Nov 2026 |
-| R-6 | Tambahkan pengukuran p95 pada tiap rilis | Rendah | Rendah | Ade | p95 terekam di dashboard | 30 Nov 2026 |
+| ID  | Rekomendasi                                          | Dampak | Usaha  | Pemilik        | Target terukur                  | Tenggat     |
+|-----|------------------------------------------------------|--------|--------|----------------|---------------------------------|-------------|
+| R-1 | Terapkan pembatasan role dan uji akses tiap rilis    | Tinggi | Sedang | Dafit + Fathan | 0 pelanggaran akses di v2       | 30 Nov 2026 |
+| R-2 | Validasi stok sebelum `addCart`                      | Sedang | Rendah | Dafit          | INT-04 lulus di v2              | 30 Nov 2026 |
+| R-3 | Set status peminjaman dan hapus session saat selesai | Tinggi | Rendah | Dafit          | INT-05 lulus di v2              | 30 Nov 2026 |
+| R-4 | Uji rollback sebelum rilis terbatas                  | Tinggi | Sedang | Aovar          | restore berhasil, ada log       | 30 Nov 2026 |
+| R-5 | Isi UAT dan laksanakan pelatihan                     | Sedang | Sedang | Kelvin         | 4 dari 5 penguji + daftar hadir | 30 Nov 2026 |
+| R-6 | Tambahkan pengukuran p95 pada tiap rilis             | Rendah | Rendah | Ade            | p95 terekam di dashboard        | 30 Nov 2026 |
 
 R-1 hingga R-3 sudah diterapkan di `v2-fixes` (`7819145`). Pembuktian formalnya
 dilakukan pada P13 dengan menjalankan suite yang sama di `v1-baseline` dan
