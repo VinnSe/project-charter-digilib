@@ -9,7 +9,7 @@ Diperbarui: 28 Nov 2026.
 - 5 modul: autentikasi/role, katalog buku & kategori, peminjaman, keranjang, laporan
 - Objek sudah disetujui dosen
 - Tag lokal: `v1-baseline` = `6e30775`, `v2-fixes` = `7819145` (belum di-push)
-- HEAD kerja: `63e2920` sebelum commit P13; remote masih `7819145`, belum ada push artefak PJBL
+- HEAD kerja: `c56853e` (commit dokumentasi P13); remote masih `7819145`, belum ada push artefak PJBL
 - Worktree regression: `D:/digilib-pjbl-v1` (`6e30775`) dan `D:/digilib-pjbl-v2` (`7819145`)
 
 ## Keputusan kelompok
@@ -61,7 +61,7 @@ per KLOC karena 2013 baris adalah jumlah baris v2, bukan v1.
 
 ## P13 — selesai
 
-Commit: (diisi setelah commit dokumentasi P13).
+Commit: `c56853e`.
 Suite 13 test yang sama dijalankan di dua worktree dengan environment identik.
 Hasil: v1 `6e30775` 8/13 lulus (61,5%), v2 `7819145` 13/13 lulus (100%),
 27 assertion di kedua build, 0 defect baru.
