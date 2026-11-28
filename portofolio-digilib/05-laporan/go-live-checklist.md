@@ -14,9 +14,11 @@ Status per 27 November 2026.
 | 7 | Backup database dan uji restore | belum dijalankan | Belum |
 | 8 | Rencana rollback diuji | belum dijalankan | Belum |
 | 9 | Konversi data master terverifikasi | belum ada verifikasi | Belum |
-| 10 | Pelatihan admin dan anggota selesai | template kosong belum diisi (`05-laporan/daftar-hadir-pelatihan.md`) | Belum |
+| 10 | Pelatihan admin dan anggota selesai | `05-laporan/daftar-hadir-pelatihan.md`, 5 peserta (1 admin, 4 anggota); tanda tangan menyusul | Selesai* |
 
-Ringkasan: 6 dari 10 item selesai. Empat item tersisa: backup/restore, uji rollback, konversi data, dan pelatihan. Ini mendukung keputusan No-Go untuk rilis penuh dan Conditional Go setelah syarat-syarat tersebut terpenuhi. Panduan pengisian ada di `PANDUAN-5-ITEM.md` di root repository.
+Ringkasan: 7 dari 10 item selesai. Tiga item tersisa: backup/restore, uji rollback, dan konversi data. Ini mendukung keputusan No-Go untuk rilis penuh dan Conditional Go setelah syarat-syarat tersebut terpenuhi. Panduan pengisian ada di `PANDUAN-5-ITEM.md` di root repository.
+
+\* Item 10 selesai secara substantif: sesi pelatihan, materi, dan peserta sudah tercatat. Tanda tangan kelima peserta menyusul dan akan dilampirkan sebelum submission akhir; status ini tidak mengklaim tanda tangan sudah ada.
 
 Strategi peralihan yang disepakati: pilot + mini paralel (lihat
 `implementation-readiness-report.md` bagian 6).

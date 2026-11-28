@@ -3,7 +3,7 @@
 Materi sesuai rencana P11 bagian 7: login, meminjam buku, melihat laporan, dan
 penanganan transaksi gagal. Durasi rencana: 60 menit.
 
-Status: **metadata dan peserta sudah terisi; tanda tangan peserta masih tertunda**.
+Status: **selesai secara substantif — metadata, materi, dan peserta terisi; tanda tangan peserta menyusul**.
 
 | Keterangan | Isi |
 |---|---|
