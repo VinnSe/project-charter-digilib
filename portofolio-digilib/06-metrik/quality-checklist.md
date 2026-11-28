@@ -17,7 +17,7 @@ DIGILIB menyimpan data peminjaman dan membedakan akses admin/anggota. Karena itu
 | Performance efficiency | Time behaviour | Waktu respons rata-rata `/book` | Maks. 2 detik, 10 request berurutan, lingkungan lokal, sebelum 30 Nov 2026 | Uji lokal | 0,0062 detik | Memenuhi | E-SYS-04 |
 | Usability | Operability | Elemen halaman keranjang tersedia | Minimal 4 dari 5 elemen pada rilis v1 | Pemeriksaan DOM | 5 dari 5 | Memenuhi | E-SYS-05 |
 | Reliability | Fault tolerance | Transaksi selesai konsisten | Status menjadi 1 dan session dihapus, 0 kegagalan | System/integration test | INT-05 gagal | Tidak memenuhi | E-INT-05 |
-| Effectiveness (quality in use) | — | Anggota menyelesaikan peminjaman tanpa bantuan | Minimal 4 dari 5 penguji | UAT | Belum diisi | Belum terukur | form UAT draft |
+| Effectiveness (quality in use) | — | Anggota menyelesaikan peminjaman tanpa bantuan | Minimal 4 dari 5 penguji | UAT | 5 dari 5 diterima | Memenuhi | `02-test-case/uat-form.md` |
 
 Catatan performa: angka 0,0062 detik adalah hasil lingkungan lokal dengan sqlite in-memory. Ini bukan ukuran kinerja produksi dan tidak boleh diklaim sebagai kinerja produksi.
 

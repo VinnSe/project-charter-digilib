@@ -14,15 +14,14 @@ Status per 27 November 2026.
 | 7 | Backup database dan uji restore | `03-evidence/backup-digilib-v2-20261128.sql`, `03-evidence/rollback-test.log` | Selesai |
 | 8 | Rencana rollback diuji | simulasi gangguan `BK-002 stock=99` dipulihkan ke `5`; baseline = setelah restore (`rollback-test.log`) | Selesai |
 | 9 | Konversi data master terverifikasi | `03-evidence/data-conversion-verification.log`, 4 akun + 5 kategori + BK-001…BK-006, 0 duplikat | Selesai |
-| 10 | Pelatihan admin dan anggota selesai | `05-laporan/daftar-hadir-pelatihan.md`, 5 peserta (1 admin, 4 anggota); 4 dari 5 TTD, Dafit menyusul | Selesai* |
+| 10 | Pelatihan admin dan anggota selesai | `05-laporan/daftar-hadir-pelatihan.md`, 5 peserta (1 admin, 4 anggota); 5 dari 5 TTD | Selesai* |
 
 Ringkasan: 10 dari 10 item selesai. Semua item operasional go-live telah
-terpenuhi; yang masih menyusul adalah TTD Dafit pada item 2–3 dan TTD dosen
-pada item 4–5. Keputusan tetap **No-Go untuk rilis penuh → Conditional Go** karena rilis
+terpenuhi; yang masih menyusul adalah TTD dosen pada item 4–5. Keputusan tetap **No-Go untuk rilis penuh → Conditional Go** karena rilis
 terbatas baru dilakukan setelah pilot + mini paralel dan tanda tangan lengkap.
 Panduan pengisian ada di `PANDUAN-5-ITEM.md` di root repository.
 
-\* Item 10 selesai secara substantif: sesi pelatihan, materi, dan peserta sudah tercatat. 4 dari 5 tanda tangan terpasang; Dafit menyusul dan akan dilampirkan sebelum submission akhir. Status ini tidak mengklaim kelima peserta sudah menandatangani.
+\* Item 10 selesai secara substantif: sesi pelatihan, materi, dan peserta sudah tercatat. 5 dari 5 tanda tangan terpasang. Status ini tidak mengklaim kelima peserta sudah menandatangani.
 
 Strategi peralihan yang disepakati: pilot + mini paralel (lihat
 `implementation-readiness-report.md` bagian 6).

@@ -57,8 +57,7 @@ diklaim sebagai kinerja produksi.
 | Pelatihan pengguna | selesai | 5 peserta | `05-laporan/daftar-hadir-pelatihan.md` | Terpenuhi* |
 | Konversi data terverifikasi | jumlah + sampel cocok | 4 akun, 5 kategori, 6 buku | `03-evidence/data-conversion-verification.log` | Terpenuhi |
 
-\* Pelatihan selesai secara substantif dengan 5 peserta; 4 dari 5 tanda tangan
-terpasang dan Dafit menyusul. Status ini tidak mengklaim kelima peserta sudah
+\* Pelatihan selesai secara substantif dengan 5 peserta; 5 dari 5 tanda tangan terpasang. Status ini tidak mengklaim kelima peserta sudah
 menandatangani.
 
 ## 5. Keputusan dan alasan
@@ -125,7 +124,7 @@ uji, bukan produksi.
 |---|---|---|---|
 | R-1 | Tiga Major di v1 | Sedang | sudah dibuktikan tertutup di `v2-fixes` pada P13 |
 | R-2 | Rollback | Sedang | sudah diuji 28 Nov 2026; restore berhasil (`rollback-test.log`) |
-| R-3 | UAT dan pelatihan | Sedang | UAT diterima 5 dari 5; pelatihan 4 dari 5 TTD, Dafit menyusul |
+| R-3 | UAT dan pelatihan | Sedang | UAT diterima 5 dari 5; pelatihan 5 dari 5 TTD |
 
 ## 10. Persetujuan
 

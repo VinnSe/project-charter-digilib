@@ -6,7 +6,7 @@ M. Aovar Ahdan, Kelvin Septio
 Objek: DIGILIB — Digital Library (Laravel)
 Build: `v1-baseline` (`6e30775`) dan `v2-fixes` (`7819145`)
 Tanggal: 28 November 2026
-Status: selesai untuk submission; TTD Dafit dan dosen menyusul
+Status: selesai untuk submission; TTD dosen menyusul
 
 Indeks seluruh bukti ada di `05-laporan/evidence-index.md`. Setiap angka di bawah
 merujuk ke file di indeks tersebut.
@@ -25,7 +25,7 @@ Keputusan akhir: **No-Go untuk rilis penuh → Conditional Go** untuk rilis
 terbatas. Kelima syarat Conditional Go terpenuhi: defect tertutup, pass rate
 minimal 95%, rollback diuji, UAT diterima, dan pelatihan tercatat. Rilis terbatas
 dilaksanakan lewat pilot + mini paralel, bukan rilis produksi penuh. Tanda tangan
-item 2–3 tersisa Dafit; item 4–5 tersisa dosen. Keduanya tidak diklaim sudah ada.
+item 2–3 sudah lengkap; item 4–5 tersisa dosen dan tidak diklaim sudah ada.
 
 Risiko residual yang masih terbuka: belum ada data produksi untuk mengukur
 availability; code coverage tidak diukur karena Xdebug/PCOV tidak terpasang;
@@ -91,7 +91,7 @@ Go-live checklist: 10 dari 10 item selesai.
 | 9 | Konversi data master terverifikasi | Selesai | `03-evidence/data-conversion-verification.log` |
 | 10 | Pelatihan admin dan anggota | Selesai* | `05-laporan/daftar-hadir-pelatihan.md` |
 
-\* Selesai secara substantif; 4 dari 5 tanda tangan terpasang, Dafit menyusul.
+\* Selesai secara substantif; 5 dari 5 tanda tangan terpasang.
 
 Rollback: backup `digilib_v2` dibuat (13.486 byte), database uji dibuat dari
 backup, gangguan disimulasikan dengan mengubah `BK-002 stock` menjadi 99, lalu
@@ -120,7 +120,7 @@ Risiko residual:
 |---|---|---|---|
 | R-1 | Tiga Major di v1 | Tertutup di v2 | retest P13 |
 | R-2 | Rollback | Sudah diuji | log restore tersedia |
-| R-3 | UAT dan pelatihan | Substansi selesai | 4 dari 5 TTD; Dafit menyusul |
+| R-3 | UAT dan pelatihan | Substansi selesai | 5 dari 5 TTD |
 | R-4 | Belum ada data produksi | Terbuka | jangan klaim availability terukur |
 | R-5 | Code coverage tidak diukur | Terbuka | pasang Xdebug/PCOV sebelum target 80% diverifikasi |
 
@@ -229,5 +229,5 @@ Format: Start — Stop — Continue.
 - `05-laporan/go-live-checklist.md` — checklist 10 dari 10.
 - `05-laporan/rollback-test-report.md` dan
   `03-evidence/data-conversion-verification.log` — bukti operasional.
-- `PANDUAN-5-ITEM.md` — panduan kelima item Human; TTD Dafit dan dosen masih
+- `PANDUAN-5-ITEM.md` — panduan kelima item Human; TTD dosen masih
   menyusul dan tidak diklaim sudah ada di laporan ini.

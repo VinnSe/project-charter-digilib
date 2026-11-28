@@ -89,8 +89,7 @@ Form kosong sudah disiapkan pada commit `d4e20a7`: `02-test-case/uat-form.md`,
 dan blok tanda tangan di `02-test-case/peer-review-form.md`. Panduan lengkap
 ada di `PANDUAN-5-ITEM.md` (root repository). Go-live checklist sudah
 diselaraskan: 10 dari 10 item selesai. Status tanda tangan per 28 November 2026:
-item 1 UAT lengkap; item 2 daftar hadir dan item 3 peer review masing-masing
-4 dari 5 (Dafit menyusul); item 4 readiness dan item 5 persetujuan memakai TTD
+item 1 UAT lengkap; item 2 daftar hadir dan item 3 peer review sudah 5 dari 5; item 4 readiness dan item 5 persetujuan memakai TTD
 Kelvin yang sama untuk perannya, sementara TTD dosen pembimbing menyusul. Uji
 rollback berhasil (`03-evidence/rollback-test.log`) dan konversi data
 terverifikasi (`03-evidence/data-conversion-verification.log`).
@@ -98,8 +97,8 @@ terverifikasi (`03-evidence/data-conversion-verification.log`).
 | Item | Waktu terbaik | Alasan |
 |---|---|---|
 | UAT ditandatangani pemilik aplikasi — **SELESAI** | Sebelum P14 | `uat-form.md` 5 dari 5 berhasil, Keputusan Diterima, tanda tangan Kelvin sebagai pemilik aplikasi (simulasi) |
-| Daftar hadir pelatihan admin/anggota — **4 dari 5 TTD** | Sebelum P14 | `daftar-hadir-pelatihan.md`: Ade, Kelvin, Fathan, Ahdan terpasang; Dafit menyusul |
-| Tanda tangan form peer review — **4 dari 5 TTD** | Sebelum P14 | `peer-review-form.md`: kelima reviewer `Setuju`; TTD Kelvin, Fathan, Ade, Ahdan terpasang; Dafit menyusul |
+| Daftar hadir pelatihan admin/anggota — **5 dari 5 TTD** | Sebelum P14 | `daftar-hadir-pelatihan.md`: kelima peserta terpasang |
+| Tanda tangan form peer review — **5 dari 5 TTD** | Sebelum P14 | `peer-review-form.md`: kelima reviewer `Setuju` dan bertanda tangan |
 | Persetujuan keputusan — **TTD Kelvin terpasang** | Sebelum P14 | `persetujuan-keputusan.md`: pemilik aplikasi dan dosen `Disetujui`; TTD dosen menyusul |
 | Tanda tangan readiness report — **TTD Kelvin terpasang** | Sebelum P14 | bagian 10: Kelvin untuk Pemilik aplikasi & Ketua tim QA; dosen pembimbing menyusul |
 
@@ -143,7 +142,7 @@ P14 — **SELESAI**. Laporan akhir terintegrasi ada di
 tinggal disesuaikan ke format kampus). Isi 7 bagian sesuai PDF: ringkasan eksekutif,
 test summary, implementation, quality evaluation, rekomendasi, lessons learned
 (Start–Stop–Continue), dan lampiran. Angka diambil dari bukti yang terindeks,
-bukan dari ingatan. Tanda tangan item 2–5 masih menyusul dan tidak diklaim
+bukan dari ingatan. Tanda tangan item 4–5 masih menyusul dan tidak diklaim
 sudah ada.
 
 ## Perintah berguna
