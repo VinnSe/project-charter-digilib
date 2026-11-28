@@ -1,0 +1,26 @@
+# Uji Rollback — DIGILIB
+Waktu eksekusi: 2026-11-28 17:57:29 SEAST
+Sumber: kloning database digilib_v2 ke database uji digilib_rollback_test.
+MySQL: XAMPP 127.0.0.1:3306, user root.
+
+## 1. Backup database sumber
+File backup: /d/digilib-pjbl/portofolio-digilib/03-evidence/backup-digilib-v2-20261128.sql
+Ukuran backup: 13486 byte
+
+## 2. Buat database uji dari backup
+Database digilib_rollback_test dibuat dan diisi dari backup.
+
+## 3. Baseline sebelum gangguan
+books=2,users=4,borrows=2,detail_borrows=2,bk002_stock=5
+
+## 4. Simulasi gangguan
+Aksi: UPDATE books SET stock=99 WHERE code='BK-002' pada database uji.
+Kondisi setelah gangguan: books=2,users=4,borrows=2,detail_borrows=2,bk002_stock=99
+
+## 5. Restore dari backup
+Kondisi setelah restore: books=2,users=4,borrows=2,detail_borrows=2,bk002_stock=5
+
+## 6. Verifikasi
+HASIL: RESTORE BERHASIL — baseline dan kondisi setelah restore identik.
+Status rollback: LULUS (bukti: /d/digilib-pjbl/portofolio-digilib/03-evidence/rollback-test.log).
+Database uji dibersihkan setelah verifikasi.

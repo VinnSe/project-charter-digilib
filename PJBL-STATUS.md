@@ -88,9 +88,10 @@ Form kosong sudah disiapkan pada commit `d4e20a7`: `02-test-case/uat-form.md`,
 `05-laporan/daftar-hadir-pelatihan.md`, `05-laporan/persetujuan-keputusan.md`,
 dan blok tanda tangan di `02-test-case/peer-review-form.md`. Panduan lengkap
 ada di `PANDUAN-5-ITEM.md` (root repository). Go-live checklist sudah
-diselaraskan: 7 dari 10 item selesai. Kelima item Human sudah selesai secara
+diselaraskan: 9 dari 10 item selesai. Kelima item Human sudah selesai secara
 substantif; item 1 bertanda tangan, item 2–5 menunggu tanda tangan yang
-dilampirkan menjelang submission akhir.
+dilampirkan menjelang submission akhir. Uji rollback sudah dilakukan dan
+berhasil (`03-evidence/rollback-test.log`); item 9 konversi data masih Belum.
 
 | Item | Waktu terbaik | Alasan |
 |---|---|---|
@@ -118,7 +119,8 @@ terhitung dua kali.
 
 Objek DIGILIB sudah disetujui dosen; pembagian peran dan format `Co-authored-by` sudah diputuskan, jadi tidak perlu diulang.
 
-Yang masih bisa dikerjakan agent: uji rollback, konversi laporan ke PDF, dan push commit (dengan izin).
+Yang masih bisa dikerjakan agent: verifikasi konversi data master, konversi
+laporan ke PDF, dan push commit (dengan izin). Uji rollback sudah selesai.
 
 ## Rencana sesi berikutnya
 

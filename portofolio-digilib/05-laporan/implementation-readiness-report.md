@@ -101,15 +101,20 @@ Pelatihan: satu sesi 60 menit untuk admin dan anggota, panduan satu halaman
 | Error rate > 5% dalam 15 menit | kembali ke versi sebelumnya | tim IT |
 | Data peminjaman hilang/rusak | restore backup terakhir + pengumuman | admin |
 
-Rencana ini **belum diuji**, sehingga tetap menjadi salah satu syarat
-Conditional Go.
+Rencana ini sudah diuji pada 28 November 2026 lewat kloning `digilib_v2` ke
+`digilib_rollback_test`: backup dibuat, gangguan disimulasikan dengan mengubah
+`BK-002 stock` menjadi 99, lalu database dipulihkan dari backup. Baseline dan
+kondisi setelah restore identik (`books=2, users=4, borrows=2,
+detail_borrows=2, bk002_stock=5`). Bukti: `03-evidence/rollback-test.log` dan
+`03-evidence/backup-digilib-v2-20261128.sql`. Uji ini dilakukan pada database
+uji, bukan produksi.
 
 ## 9. Risiko residual
 
 | ID | Risiko | Dampak | Mitigasi |
 |---|---|---|---|
 | R-1 | Tiga Major di v1 | Sedang | sudah dibuktikan tertutup di `v2-fixes` pada P13 |
-| R-2 | Rollback belum diuji | Sedang | uji sebelum rilis terbatas |
+| R-2 | Rollback | Sedang | sudah diuji 28 Nov 2026; restore berhasil (`rollback-test.log`) |
 | R-3 | UAT dan pelatihan | Sedang | UAT diterima 5 dari 5; pelatihan tercatat dengan 5 peserta, tanda tangan menyusul |
 
 ## 10. Persetujuan
