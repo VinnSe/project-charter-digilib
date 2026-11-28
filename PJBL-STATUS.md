@@ -95,7 +95,7 @@ item 2 pelatihan selesai secara substantif dengan tanda tangan peserta menyusul.
 |---|---|---|
 | UAT ditandatangani pemilik aplikasi — **SELESAI** | Sebelum P14 | `uat-form.md` 5 dari 5 berhasil, Keputusan Diterima, tanda tangan Kelvin sebagai pemilik aplikasi (simulasi) |
 | Daftar hadir pelatihan admin/anggota — **SELESAI (substansi)** | Sebelum P14 | `daftar-hadir-pelatihan.md` berisi 5 peserta, materi, dan metadata; tanda tangan menyusul sebelum submission akhir |
-| Tanda tangan form peer review — **SELESAI (substansi)** | Sebelum P14 | kelima reviewer menyatakan `Setuju` di `peer-review-form.md`; nama, tanda tangan, dan tanggal menyusul |
+| Tanda tangan form peer review — **SELESAI (substansi)** | Sebelum P14 | kelima reviewer menyatakan `Setuju`, nama dan tanggal 28 November 2026 terisi di `peer-review-form.md`; tanda tangan menyusul |
 | Persetujuan keputusan di `05-laporan/persetujuan-keputusan.md` | Sebelum P14 | keputusan usulan belum disetujui pemilik/dosen |
 | Tanda tangan readiness report (`implementation-readiness-report.md` bagian 10) | Sebelum P14 | kolom sengaja kosong sampai diisi orangnya |
 
